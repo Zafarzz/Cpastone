@@ -1,0 +1,3733 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Capstone Midterm Quiz — Edition 4 (no Continue button)</title>
+<style>
+:root{--bg:#f5f7fb;--surface:#fff;--surface2:#f1f5f9;--ink:#18263b;--muted:#53647b;--line:#dce3ed;--blue:#2847a5;--blue2:#eaf0ff;--good:#116244;--goodbg:#e5f5ed;--bad:#9c2c37;--badbg:#fff0f0;--focus:#d58814;--shadow:0 16px 46px rgba(20,39,80,.07)}
+:root[data-theme="dark"]{--bg:#111824;--surface:#1c2636;--surface2:#273347;--ink:#eef2f9;--muted:#b3bfd1;--line:#3a4a5e;--blue:#a4bfff;--blue2:#283c62;--good:#9be2c3;--goodbg:#173e34;--bad:#ffc0c1;--badbg:#512c34;--focus:#f7c86c;--shadow:0 16px 46px rgba(0,0,0,.2)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;margin:0;min-height:100vh}button,input,select{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.47}a{color:var(--blue)}:focus-visible{outline:3px solid var(--focus);outline-offset:3px}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(1.55rem,3.1vw,2.25rem);line-height:1.17;letter-spacing:-.035em}h2{font-size:1.26rem;letter-spacing:-.015em}h3{font-size:1.02rem}p{color:var(--muted)}.shell{max-width:1090px;padding:0 22px;margin:auto}.site-head{position:sticky;top:0;z-index:15;background:var(--surface);border-bottom:1px solid var(--line)}.head-inner{min-height:73px;display:flex;align-items:center;gap:16px;justify-content:space-between}.identity{display:flex;align-items:center;gap:13px;min-width:0}.mark{width:41px;height:41px;flex:none;background:var(--blue);color:var(--surface);border-radius:12px;font-size:.8rem;font-weight:900;display:grid;place-items:center;letter-spacing:-.02em}:root[data-theme="dark"] .mark{color:#14223f}.brand-name{font-weight:800;font-size:.92rem;line-height:1.25}.brand-sub{color:var(--muted);font-size:.75rem;line-height:1.2}.top-actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap;justify-content:end}.mini-button,.mini-select{border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--ink);padding:7px 10px;font-size:.81rem}.id-chip{color:var(--muted);font-size:.78rem;white-space:nowrap}.id-chip strong{color:var(--ink)}.inline-link{border:0;padding:0;background:none;color:var(--blue);font-size:inherit;text-decoration:underline;text-underline-offset:3px}.main{padding-top:34px;padding-bottom:70px}.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:27px}.card+.card{margin-top:19px}.lead{max-width:65ch}.small{font-size:.83rem;color:var(--muted)}.muted{color:var(--muted)}.eyebrow{display:inline-block;font-weight:800;font-size:.7rem;text-transform:uppercase;letter-spacing:.16em;color:var(--blue);margin-bottom:10px}.pill{font-size:.72rem;font-weight:750;border-radius:99px;padding:4px 9px;border:1px solid var(--line);color:var(--muted);display:inline-flex;align-items:center;gap:5px}.pill.strong{color:var(--blue);border-color:var(--blue)}.stack{display:grid;gap:15px}.control-label{display:block;font-size:.87rem;font-weight:750;margin-bottom:8px}.field{width:100%;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:13px 15px;border-radius:11px}.field[aria-invalid="true"]{border-color:var(--bad)}.error{color:var(--bad);font-size:.83rem;margin:7px 0 0}.intro{max-width:585px;margin:clamp(24px,8vh,95px) auto}.intro .card{padding:clamp(25px,4vw,44px)}.button{background:var(--blue);border:1px solid var(--blue);color:white;font-weight:750;border-radius:11px;padding:11px 17px;min-height:46px;display:inline-flex;align-items:center;justify-content:center;gap:8px}:root[data-theme="dark"] .button{color:#132440}.button.secondary{background:var(--surface);color:var(--ink);border-color:var(--line)}.button.ghost{background:var(--blue2);color:var(--blue);border-color:transparent}.button.danger{background:var(--badbg);color:var(--bad);border-color:var(--bad)}:root[data-theme="dark"] .button.secondary{color:var(--ink)}:root[data-theme="dark"] .button.ghost{color:var(--blue)}:root[data-theme="dark"] .button.danger{color:var(--bad)}.button-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.button.full{width:100%}.setup-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.8fr);gap:20px}.topic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.topic-choice{display:flex;align-items:center;gap:10px;border:1px solid var(--line);padding:12px;border-radius:12px;cursor:pointer;min-width:0;background:var(--surface)}.topic-choice:hover,.choice:hover{border-color:var(--blue)}.topic-choice:has(input:checked){border-color:var(--blue);background:var(--blue2)}.topic-choice input{accent-color:var(--blue);width:18px;height:18px;flex:none}.topic-name{flex:1;min-width:0;font-weight:650;font-size:.88rem}.count{font-size:.72rem;color:var(--muted);white-space:nowrap}.setting{padding:17px 0;border-bottom:1px solid var(--line)}.setting:last-child{border-bottom:0}.seg{display:flex;flex-wrap:wrap;gap:7px}.seg label{cursor:pointer}.seg input{position:absolute;opacity:0;width:1px;height:1px}.seg span{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:8px 13px;color:var(--muted);background:var(--surface)}.seg input:checked+span{background:var(--blue2);border-color:var(--blue);color:var(--blue);font-weight:750}.seg input:focus-visible+span{outline:3px solid var(--focus);outline-offset:3px}.toggle{display:flex;gap:10px;align-items:center;cursor:pointer;font-size:.89rem;margin-bottom:10px}.toggle input{width:17px;height:17px;accent-color:var(--blue)}.info{border:1px solid var(--line);padding:12px 14px;border-radius:11px;background:var(--surface2);font-size:.85rem}.info p:last-child{margin-bottom:0}.panel-head{display:flex;justify-content:space-between;align-items:flex-start;gap:15px;flex-wrap:wrap}.quiz-layout{display:grid;grid-template-columns:minmax(0,1fr) 230px;align-items:start;gap:20px}.quiz-layout.practice{grid-template-columns:1fr}.progress-track{width:100%;height:9px;border-radius:99px;background:var(--surface2);overflow:hidden;margin:14px 0 6px}.progress-bar{background:var(--blue);height:100%;width:0;transition:width .2s}.question-title{font-size:clamp(1.1rem,2.4vw,1.47rem);line-height:1.4;font-weight:750;letter-spacing:-.018em;margin:20px 0}.answers{display:grid;gap:10px;margin:20px 0}.choice{display:flex;align-items:flex-start;gap:13px;border:1px solid var(--line);border-radius:12px;padding:13px 14px;cursor:pointer;background:var(--surface);color:var(--ink)}.choice:has(input:checked){background:var(--blue2);border-color:var(--blue)}.choice input{accent-color:var(--blue);margin:4px 0 0;flex:none;width:17px;height:17px}.choice .shortcut{flex:none;width:23px;height:23px;display:grid;place-items:center;background:var(--surface2);color:var(--muted);border-radius:6px;font-size:.74rem;font-weight:800;margin-top:0}.choice .option-text{min-width:0;overflow-wrap:anywhere}.choice.correct{border:2px solid var(--good);background:var(--goodbg)}.choice.incorrect{border:2px solid var(--bad);background:var(--badbg)}.choice input:disabled{opacity:.95}.choice input:focus-visible{outline:3px solid var(--focus);outline-offset:5px}.feedback{padding:16px;border-radius:13px;border:1px solid var(--line);margin:16px 0}.feedback.good{background:var(--goodbg);color:var(--good);border-color:var(--good)}.feedback.bad{background:var(--badbg);color:var(--bad);border-color:var(--bad)}.feedback strong{display:block;margin-bottom:6px}.feedback p{color:inherit;margin-bottom:9px}.source{font-size:.76rem;color:var(--muted);border-top:1px solid var(--line);padding-top:10px;margin-top:12px;overflow-wrap:anywhere}.source code{font-size:.72rem;overflow-wrap:anywhere}.quiz-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:24px}.flag{display:inline-flex;align-items:center;gap:7px;background:transparent;border:1px solid var(--line);color:var(--ink);padding:9px 12px;border-radius:9px}.flag[aria-pressed="true"]{background:var(--blue2);border-color:var(--blue);color:var(--blue)}.navigator{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px;margin-top:16px}.nav-q{border-radius:9px;background:var(--surface);color:var(--muted);border:1px solid var(--line);padding:7px 0;min-height:43px;font-size:.8rem;display:grid;place-items:center}.nav-q b{font-size:.8rem}.nav-q small{font-size:.55rem;font-weight:800;letter-spacing:0}.nav-q.done{background:var(--goodbg);color:var(--good)}.nav-q.flagged{border:2px dashed var(--focus)}.nav-q.current{outline:2px solid var(--blue);outline-offset:1px}.nav-legend{font-size:.76rem;line-height:1.8;color:var(--muted);margin-top:16px}.metric-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:20px 0}.metric{border:1px solid var(--line);border-radius:12px;padding:14px;background:var(--surface2)}.metric strong{font-size:clamp(1.3rem,2.5vw,2rem);font-variant-numeric:tabular-nums;display:block;line-height:1.3}.metric span{font-size:.77rem;color:var(--muted)}.bars{display:grid;gap:13px;margin-top:17px}.bar-label{display:flex;justify-content:space-between;gap:10px;font-size:.87rem;margin-bottom:5px}.bar-track{height:13px;background:var(--surface2);border-radius:99px;overflow:hidden;border:1px solid var(--line)}.bar-fill{height:100%;background:var(--blue);min-width:0}.recommendations{padding:16px;border:1px solid var(--line);background:var(--surface2);border-radius:12px;margin-top:20px}.recommendations li{margin-top:8px}.review-list{display:grid;gap:15px}.review-item{padding:19px;border:1px solid var(--line);border-radius:13px}.review-item h3{font-size:1rem;margin:8px 0}.answer-line{font-size:.88rem;margin:6px 0}.answer-line strong{color:var(--ink)}.answer-good{color:var(--good);font-weight:750}.answer-bad{color:var(--bad);font-weight:750}.history-list{display:grid;gap:10px;margin:15px 0}.history-row{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;font-size:.83rem;padding-bottom:9px;border-bottom:1px solid var(--line)}.history-row:last-child{border:0}.sparkline{max-width:100%;height:110px;display:block}.history-plot{width:100%;max-width:600px;background:var(--surface2);border-radius:12px;padding:10px}.history-plot svg{display:block;width:100%;height:103px}.history-plot text{fill:var(--muted);font-size:10px}.history-plot polyline{fill:none;stroke:var(--blue);stroke-width:3;stroke-linejoin:round;stroke-linecap:round}.history-plot circle{fill:var(--blue)}details{color:var(--muted)}summary{cursor:pointer;color:var(--blue);font-weight:750}details p{padding-top:10px}.dialog-back{position:fixed;inset:0;background:rgba(3,10,22,.66);z-index:40;display:grid;place-items:center;padding:18px}.dialog-card{background:var(--surface);border:1px solid var(--line);color:var(--ink);width:min(100%,460px);border-radius:17px;padding:26px;box-shadow:0 24px 70px rgba(0,0,0,.25)}.dialog-card p{margin-bottom:22px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.footer{padding-top:21px;border-top:1px solid var(--line);color:var(--muted);font-size:.74rem;margin-top:36px}.foot-tag{margin-bottom:0}.divider{height:1px;background:var(--line);margin:16px 0}.storage-note{font-size:.81rem;color:var(--muted);margin:11px 0}.timer{font-weight:800;font-variant-numeric:tabular-nums}.timer.urgent{color:var(--bad)}
+@media(max-width:800px){.setup-grid,.quiz-layout{grid-template-columns:1fr}.quiz-layout aside{order:2}.topic-grid{grid-template-columns:1fr}.metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.shell{padding:0 14px}.main{padding-top:20px}.card{padding:18px}.head-inner{min-height:70px}.brand-sub{display:none}.id-chip{display:none}}
+@media(max-width:480px){.brand-name{font-size:.79rem}.mark{width:34px;height:34px;border-radius:9px}.mini-button,.mini-select{padding:6px 7px;font-size:.74rem}.head-inner{gap:4px}.top-actions{gap:5px}.metric-grid{gap:8px}.metric{padding:10px}.history-row{grid-template-columns:1fr auto}.history-row span:last-child{display:none}.button{flex:1}.button-row{align-items:stretch}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.site-head,.footer,.button-row,.no-print,.navigator{display:none!important}.shell{max-width:100%;padding:0}.card,.review-item{box-shadow:none;break-inside:avoid}.main{padding:0}.card{border:0}}
+</style>
+</head>
+<body>
+<header class="site-head"><div class="shell head-inner"><div class="identity"><div class="mark" aria-hidden="true">S/D</div><div><div class="brand-name">Capstone · System Analysis &amp; Design</div><div class="brand-sub" id="brand-sub">Midterm preparation · Offline quiz</div></div></div><div class="top-actions"><span id="id-display"></span><label class="sr-only" for="language">Language</label><select id="language" class="mini-select" aria-label="Language"><option value="en">English</option><option value="ru">Русский</option></select><button type="button" id="theme" class="mini-button">Dark mode</button></div></div></header>
+<main class="shell main" id="app"><section class="intro"><div class="card"><span class="eyebrow">SYSTEM ANALYSIS &amp; DESIGN · EDITION 4</span><h1>The quiz cannot run in this viewer</h1><p>This interactive HTML app requires JavaScript. If you see this message, the viewer has blocked its script.</p><p><strong>How to open it:</strong> Download the ZIP, extract it, then double-click <code>capstone_midterm_quiz.html</code> to open it in Chrome, Edge, or Firefox. Do not open it in ChatGPT's file preview.</p><p class="small">Your questions and answers are stored in the HTML file. No internet is needed.</p></div></section></main>
+<footer class="shell footer"><p class="foot-tag" id="privacy-footer">Offline • No accounts, ads, analytics or network requests • Progress stays in this browser when storage is available.</p></footer>
+<div class="sr-only" id="announcement" aria-live="polite" aria-atomic="true"></div>
+<div id="dialog-root"></div>
+<script type="application/json" id="question-bank">{
+  "metadata": {
+    "course": "Capstone: System Analysis and Design",
+    "sourcePolicy": "Only the four attached Fall 2026 course PDFs; page references are 1-based PDF page numbers.",
+    "defaultTimerMinutes": 30,
+    "idPattern": "^[A-Za-z0-9][A-Za-z0-9_-]{2,31}$"
+  },
+  "topics": [
+    {
+      "id": "SDLC",
+      "name": {
+        "en": "SDLC & testing",
+        "ru": "ЖЦ разработки и тестирование"
+      },
+      "count": 14
+    },
+    {
+      "id": "METHODS",
+      "name": {
+        "en": "Development methodologies",
+        "ru": "Методологии разработки"
+      },
+      "count": 10
+    },
+    {
+      "id": "REQUIREMENTS",
+      "name": {
+        "en": "Requirements analysis",
+        "ru": "Анализ требований"
+      },
+      "count": 14
+    },
+    {
+      "id": "USE CASE",
+      "name": {
+        "en": "Use cases",
+        "ru": "Варианты использования"
+      },
+      "count": 10
+    },
+    {
+      "id": "BPM",
+      "name": {
+        "en": "Business process modeling",
+        "ru": "Моделирование бизнес-процессов"
+      },
+      "count": 8
+    },
+    {
+      "id": "ERD",
+      "name": {
+        "en": "ERD & data models",
+        "ru": "ER-диаграммы и модели данных"
+      },
+      "count": 16
+    },
+    {
+      "id": "SQL",
+      "name": {
+        "en": "SQL fundamentals & examples",
+        "ru": "SQL: основы и примеры"
+      },
+      "count": 18
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q001",
+      "topic": "SDLC",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "What does conversion mean in the SDLC slides?",
+        "ru": "Что означает конверсия (conversion) в лекции?"
+      },
+      "options": [
+        {
+          "en": "Moving information from a legacy system to a new one",
+          "ru": "Перенос данных из старой системы в новую"
+        },
+        {
+          "en": "Testing small code units",
+          "ru": "Тестирование отдельных модулей"
+        },
+        {
+          "en": "Drawing process diagrams",
+          "ru": "Создание диаграмм процессов"
+        },
+        {
+          "en": "Providing a customer demo",
+          "ru": "Демонстрация заказчику"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "Conversion transfers information from an old system to a new system; unit testing and diagramming are different activities.",
+        "ru": "Конверсия переносит информацию из прежней системы в новую, а не проверяет код."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 6,
+        "section": "SDLC & testing"
+      }
+    },
+    {
+      "id": "Q002",
+      "topic": "SDLC",
+      "difficulty": "easy",
+      "type": "true-false",
+      "question": {
+        "en": "A legacy system is old and nearing or beyond the end of its useful life.",
+        "ru": "Legacy-система — старая система, которая приближается к концу срока службы или уже вышла за него."
+      },
+      "options": [
+        {
+          "en": "True",
+          "ru": "Верно"
+        },
+        {
+          "en": "False",
+          "ru": "Неверно"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "This matches the legacy-system definition; off-the-shelf software is a separate category.",
+        "ru": "Это определение legacy-системы; готовое ПО — другая категория."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 6,
+        "section": "SDLC & testing"
+      }
+    },
+    {
+      "id": "Q003",
+      "topic": "SDLC",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "What characterizes off-the-shelf application software in these slides?",
+        "ru": "Что характеризует готовое (off-the-shelf) ПО?"
+      },
+      "options": [
+        {
+          "en": "It must be written for one company",
+          "ru": "Обязательно разрабатывается для одной фирмы"
+        },
+        {
+          "en": "It has no general business functions",
+          "ru": "Не поддерживает общие процессы"
+        },
+        {
+          "en": "It supports general processes without specific customization",
+          "ru": "Поддерживает общие процессы без специальной доработки"
+        },
+        {
+          "en": "It only transfers legacy records",
+          "ru": "Только переносит старые записи"
+        }
+      ],
+      "correctAnswers": [
+        2
+      ],
+      "explanation": {
+        "en": "Off-the-shelf software supports general business processes without requiring organization-specific customization.",
+        "ru": "Готовое ПО поддерживает типовые бизнес-процессы без индивидуальной настройки."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 6,
+        "section": "SDLC & testing"
+      }
+    },
+    {
+      "id": "Q004",
+      "topic": "SDLC",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Why is software customization performed?",
+        "ru": "Для чего нужна кастомизация ПО?"
+      },
+      "options": [
+        {
+          "en": "To remove business requirements",
+          "ru": "Чтобы отменить требования бизнеса"
+        },
+        {
+          "en": "To adapt software to specific user or business needs",
+          "ru": "Чтобы адаптировать ПО к конкретным потребностям"
+        },
+        {
+          "en": "To end all maintenance",
+          "ru": "Чтобы полностью отменить сопровождение"
+        },
+        {
+          "en": "To replace planning with testing",
+          "ru": "Чтобы заменить планирование тестированием"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "Customization modifies software for particular users or business needs, unlike unchanged off-the-shelf use.",
+        "ru": "Кастомизация изменяет ПО под конкретные требования пользователя или бизнеса."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 6,
+        "section": "SDLC & testing"
+      }
+    },
+    {
+      "id": "Q005",
+      "topic": "SDLC",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which is the lecture definition of SDLC?",
+        "ru": "Как лекция определяет SDLC?"
+      },
+      "options": [
+        {
+          "en": "A single SQL command",
+          "ru": "Одна команда SQL"
+        },
+        {
+          "en": "A diagram of database keys",
+          "ru": "Диаграмма ключей БД"
+        },
+        {
+          "en": "The overall process of developing information systems through maintenance",
+          "ru": "Полный процесс создания информационной системы до сопровождения"
+        },
+        {
+          "en": "Only the programming phase",
+          "ru": "Только программирование"
+        }
+      ],
+      "correctAnswers": [
+        2
+      ],
+      "explanation": {
+        "en": "The SDLC covers system development from planning and analysis through implementation and maintenance.",
+        "ru": "SDLC охватывает путь от планирования и анализа до внедрения и сопровождения."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 7,
+        "section": "SDLC & testing"
+      }
+    },
+    {
+      "id": "Q006",
+      "topic": "SDLC",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "A team is defining initial project goals and a first-level plan. Which phase is this?",
+        "ru": "Команда формирует первоначальный план и цели. Какой это этап?"
+      },
+      "options": [
+        {
+          "en": "Planning",
+          "ru": "Планирование"
+        },
+        {
+          "en": "Analysis",
+          "ru": "Анализ"
+        },
+        {
+          "en": "Testing",
+          "ru": "Тестирование"
+        },
+        {
+          "en": "Maintenance",
+          "ru": "Сопровождение"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "Planning establishes the initial plan and project goals; analysis then refines goals into functions.",
+        "ru": "Планирование устанавливает цели и план; анализ уточняет будущие функции."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 8,
+        "section": "SDLC & testing"
+      }
+    },
+    {
+      "id": "Q007",
+      "topic": "SDLC",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which phase refines project goals into defined functions and operations after examining user needs?",
+        "ru": "На каком этапе цели уточняются до функций после изучения нужд пользователей?"
+      },
+      "options": [
+        {
+          "en": "Implementation",
+          "ru": "Внедрение"
+        },
+        {
+          "en": "Design",
+          "ru": "Проектирование"
+        },
+        {
+          "en": "Analysis",
+          "ru": "Анализ"
+        },
+        {
+          "en": "Development",
+          "ru": "Разработка"
+        }
+      ],
+      "correctAnswers": [
+        2
+      ],
+      "explanation": {
+        "en": "Analysis examines end-user business requirements and specifies intended functions; design details their form.",
+        "ru": "Анализ изучает требования пользователей и определяет функции будущей системы."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 8,
+        "section": "SDLC & testing"
+      }
+    },
+    {
+      "id": "Q008",
+      "topic": "SDLC",
+      "difficulty": "medium",
+      "type": "multi-select",
+      "question": {
+        "en": "Which items does the lecture list as outputs/descriptions in the design phase?",
+        "ru": "Что лекция относит к результатам проектирования?"
+      },
+      "options": [
+        {
+          "en": "Screen layouts",
+          "ru": "Макеты экранов"
+        },
+        {
+          "en": "Business rules",
+          "ru": "Бизнес-правила"
+        },
+        {
+          "en": "Process diagrams",
+          "ru": "Диаграммы процессов"
+        },
+        {
+          "en": "Production user transactions",
+          "ru": "Реальные рабочие транзакции пользователей"
+        }
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2
+      ],
+      "explanation": {
+        "en": "Design specifies layouts, business rules, and process diagrams; actual production operations belong to implementation.",
+        "ru": "Проектирование описывает интерфейсы, правила и процессы, но ещё не работу в продакшене."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 9,
+        "section": "SDLC & testing"
+      }
+    },
+    {
+      "id": "Q009",
+      "topic": "SDLC",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "At which SDLC phase are detailed design documents transformed into an actual system?",
+        "ru": "На каком этапе подробный проект превращается в рабочую систему?"
+      },
+      "options": [
+        {
+          "en": "Planning",
+          "ru": "Планирование"
+        },
+        {
+          "en": "Development",
+          "ru": "Разработка"
+        },
+        {
+          "en": "Analysis",
+          "ru": "Анализ"
+        },
+        {
+          "en": "Maintenance",
+          "ru": "Сопровождение"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "Development builds the actual system using detailed design documents.",
+        "ru": "Разработка превращает проектную документацию в реальную систему."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 9,
+        "section": "SDLC & testing"
+      }
+    },
+    {
+      "id": "Q010",
+      "topic": "SDLC",
+      "difficulty": "hard",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Testing verifies the system against requirements defined in which earlier phase?",
+        "ru": "С требованиями какого раннего этапа сверяют систему при тестировании?"
+      },
+      "options": [
+        {
+          "en": "Analysis",
+          "ru": "Анализ"
+        },
+        {
+          "en": "Maintenance",
+          "ru": "Сопровождение"
+        },
+        {
+          "en": "Implementation",
+          "ru": "Внедрение"
+        },
+        {
+          "en": "Planning alone",
+          "ru": "Только планирование"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "The testing slide explicitly says to verify business requirements defined in the analysis phase.",
+        "ru": "Тестирование проверяет соответствие бизнес-требованиям, определённым во время анализа."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 10,
+        "section": "SDLC & testing"
+      }
+    },
+    {
+      "id": "Q011",
+      "topic": "SDLC",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which event best represents implementation?",
+        "ru": "Что лучше всего описывает внедрение системы?"
+      },
+      "options": [
+        {
+          "en": "Documenting intended screen layouts",
+          "ru": "Документирование макетов"
+        },
+        {
+          "en": "Identifying first-level goals",
+          "ru": "Определение первых целей"
+        },
+        {
+          "en": "Releasing the system for real business operations",
+          "ru": "Запуск системы для реальных операций"
+        },
+        {
+          "en": "Collecting elicitation interviews",
+          "ru": "Проведение интервью"
+        }
+      ],
+      "correctAnswers": [
+        2
+      ],
+      "explanation": {
+        "en": "Implementation puts the system into production so users perform actual operations.",
+        "ru": "Внедрение означает запуск в эксплуатацию для реальных бизнес-операций."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 10,
+        "section": "SDLC & testing"
+      }
+    },
+    {
+      "id": "Q012",
+      "topic": "SDLC",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which phase includes corrections, additions and upgrades after release?",
+        "ru": "На каком этапе после выпуска вносят исправления и обновления?"
+      },
+      "options": [
+        {
+          "en": "Planning",
+          "ru": "Планирование"
+        },
+        {
+          "en": "Analysis",
+          "ru": "Анализ"
+        },
+        {
+          "en": "Maintenance",
+          "ru": "Сопровождение"
+        },
+        {
+          "en": "Design",
+          "ru": "Проектирование"
+        }
+      ],
+      "correctAnswers": [
+        2
+      ],
+      "explanation": {
+        "en": "Maintenance updates and modifies the system to continue meeting user and business needs.",
+        "ru": "Сопровождение включает исправления, доработки и обновления после внедрения."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 13,
+        "section": "SDLC & testing"
+      }
+    },
+    {
+      "id": "Q013",
+      "topic": "SDLC",
+      "difficulty": "hard",
+      "type": "multi-select",
+      "question": {
+        "en": "Which testing labels actually appear on the lecture slide?",
+        "ru": "Какие виды тестирования есть непосредственно на слайде?"
+      },
+      "options": [
+        {
+          "en": "User Acceptance Testing (UAT)",
+          "ru": "Приёмочное тестирование (UAT)"
+        },
+        {
+          "en": "Integration Testing",
+          "ru": "Интеграционное тестирование"
+        },
+        {
+          "en": "Unit Testing",
+          "ru": "Модульное тестирование"
+        },
+        {
+          "en": "Database Normalization Testing",
+          "ru": "Тестирование нормализации БД"
+        }
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2
+      ],
+      "explanation": {
+        "en": "The slide lists UAT, integration and unit testing among six types; it does not list database normalization testing.",
+        "ru": "На слайде присутствуют UAT, интеграционное и модульное тестирование; нормализация БД не указана."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 11,
+        "section": "SDLC & testing"
+      }
+    },
+    {
+      "id": "Q014",
+      "topic": "SDLC",
+      "difficulty": "hard",
+      "type": "multiple-choice",
+      "question": {
+        "en": "According to the slide, how do UI and UX differ?",
+        "ru": "Как на слайде различаются UI и UX?"
+      },
+      "options": [
+        {
+          "en": "UX is only colors; UI is the whole journey",
+          "ru": "UX — только цвета, UI — весь опыт"
+        },
+        {
+          "en": "UI is visible screen elements; UX is the overall user experience including UI",
+          "ru": "UI — видимые элементы экрана; UX — весь пользовательский опыт, включая UI"
+        },
+        {
+          "en": "They are exact synonyms",
+          "ru": "Это полные синонимы"
+        },
+        {
+          "en": "UI refers only to server code",
+          "ru": "UI — только серверный код"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "The slide defines UI as visible screen elements and UX as the entire experience, including UI.",
+        "ru": "UI — видимые элементы интерфейса; UX шире и включает взаимодействие пользователя в целом."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 9,
+        "section": "SDLC & testing"
+      }
+    },
+    {
+      "id": "Q015",
+      "topic": "METHODS",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "What is the essential sequence rule of Waterfall?",
+        "ru": "Какое правило определяет Waterfall?"
+      },
+      "options": [
+        {
+          "en": "All phases run without order",
+          "ru": "Этапы идут без порядка"
+        },
+        {
+          "en": "The output of one phase becomes input for the next",
+          "ru": "Результат этапа служит входом следующего"
+        },
+        {
+          "en": "Every sprint lasts one day",
+          "ru": "Каждый спринт длится один день"
+        },
+        {
+          "en": "Only customers write code",
+          "ru": "Код пишут только заказчики"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "Waterfall moves through phases whose outputs feed succeeding phases.",
+        "ru": "Waterfall последовательно передаёт результат одного этапа следующему."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 18,
+        "section": "Development methodologies"
+      }
+    },
+    {
+      "id": "Q016",
+      "topic": "METHODS",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which Waterfall problem is explicitly mentioned in the slides?",
+        "ru": "Какой недостаток Waterfall назван в лекции?"
+      },
+      "options": [
+        {
+          "en": "Working software always arrives first",
+          "ru": "Рабочая программа сразу готова"
+        },
+        {
+          "en": "Problems can be detected late because a working system appears late",
+          "ru": "Проблемы обнаруживаются поздно, так как рабочая система появляется поздно"
+        },
+        {
+          "en": "Requirements are never written down",
+          "ru": "Требования никогда не записывают"
+        },
+        {
+          "en": "It lacks any phases",
+          "ru": "У метода нет этапов"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "The lecture warns that a working system is obtained late, so important problems may be discovered late.",
+        "ru": "Рабочая система появляется в конце, поэтому важные проблемы могут выявиться слишком поздно."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 19,
+        "section": "Development methodologies"
+      }
+    },
+    {
+      "id": "Q017",
+      "topic": "METHODS",
+      "difficulty": "medium",
+      "type": "true-false",
+      "question": {
+        "en": "The slides say it is easy to specify all customer requirements in detail at the beginning of Waterfall.",
+        "ru": "Слайды утверждают, что требования заказчика легко полностью описать в начале Waterfall."
+      },
+      "options": [
+        {
+          "en": "True",
+          "ru": "Верно"
+        },
+        {
+          "en": "False",
+          "ru": "Неверно"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "The slide says detailing the desired requirements at the beginning is difficult.",
+        "ru": "Наоборот, лекция отмечает сложность полного описания требований в начале."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 19,
+        "section": "Development methodologies"
+      }
+    },
+    {
+      "id": "Q018",
+      "topic": "METHODS",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "How does the lecture describe iterative development?",
+        "ru": "Как лекция описывает итеративную разработку?"
+      },
+      "options": [
+        {
+          "en": "One uninterrupted large release",
+          "ru": "Один большой релиз"
+        },
+        {
+          "en": "A series of tiny projects",
+          "ru": "Серия небольших проектов"
+        },
+        {
+          "en": "Only database creation",
+          "ru": "Только создание БД"
+        },
+        {
+          "en": "Maintenance without testing",
+          "ru": "Сопровождение без тестов"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "Iterative development consists of a series of small projects or passes.",
+        "ru": "Итеративная разработка состоит из последовательности небольших циклов."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 20,
+        "section": "Development methodologies"
+      }
+    },
+    {
+      "id": "Q019",
+      "topic": "METHODS",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "What is Agile intended to achieve through early, continuous delivery?",
+        "ru": "Чего Agile добивается ранней непрерывной поставкой?"
+      },
+      "options": [
+        {
+          "en": "Elimination of customers",
+          "ru": "Исключения заказчиков"
+        },
+        {
+          "en": "Customer satisfaction",
+          "ru": "Удовлетворённости заказчиков"
+        },
+        {
+          "en": "Permanent fixed requirements",
+          "ru": "Невозможности менять требования"
+        },
+        {
+          "en": "Removal of feedback",
+          "ru": "Отмены обратной связи"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "Agile emphasizes customer satisfaction through early and continuous delivery of useful software.",
+        "ru": "Agile стремится удовлетворить заказчика ранней и непрерывной поставкой полезного ПО."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 20,
+        "section": "Development methodologies"
+      }
+    },
+    {
+      "id": "Q020",
+      "topic": "METHODS",
+      "difficulty": "hard",
+      "type": "multi-select",
+      "question": {
+        "en": "Select the Agile characteristics shown in the comparison table.",
+        "ru": "Выберите характеристики Agile из сравнительной таблицы."
+      },
+      "options": [
+        {
+          "en": "Requirements evolve during development",
+          "ru": "Требования меняются по ходу работы"
+        },
+        {
+          "en": "Frequent incremental releases",
+          "ru": "Частые небольшие релизы"
+        },
+        {
+          "en": "Continuous customer feedback",
+          "ru": "Постоянная обратная связь заказчика"
+        },
+        {
+          "en": "Progress only measured by phase completion",
+          "ru": "Прогресс только по завершённым этапам"
+        }
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2
+      ],
+      "explanation": {
+        "en": "Agile has evolving requirements, frequent releases and ongoing feedback; phase milestones are the traditional measure.",
+        "ru": "Agile допускает изменение требований, частые релизы и постоянную обратную связь."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 23,
+        "section": "Development methodologies"
+      }
+    },
+    {
+      "id": "Q021",
+      "topic": "METHODS",
+      "difficulty": "hard",
+      "type": "multiple-choice",
+      "question": {
+        "en": "How does the comparison table distinguish risk handling?",
+        "ru": "Чем различается работа с рисками в таблице?"
+      },
+      "options": [
+        {
+          "en": "Agile addresses risks late; traditional addresses them early",
+          "ru": "Agile поздно, традиционный подход рано"
+        },
+        {
+          "en": "Both prohibit risk management",
+          "ru": "Оба запрещают управление рисками"
+        },
+        {
+          "en": "Agile detects and mitigates risks early; traditional approaches them later",
+          "ru": "Agile выявляет и снижает риски рано, традиционный — позднее"
+        },
+        {
+          "en": "Traditional completely removes risks",
+          "ru": "Традиционный подход устраняет все риски"
+        }
+      ],
+      "correctAnswers": [
+        2
+      ],
+      "explanation": {
+        "en": "The table emphasizes early risk detection for Agile versus later risk handling in traditional SDLC.",
+        "ru": "В Agile риски выявляют и смягчают раньше, в традиционном подходе — позже."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 23,
+        "section": "Development methodologies"
+      }
+    },
+    {
+      "id": "Q022",
+      "topic": "METHODS",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "What restriction does the XP slide describe?",
+        "ru": "Какое ограничение XP указано на слайде?"
+      },
+      "options": [
+        {
+          "en": "Developers cannot move to the next tiny phase until the current one is complete",
+          "ru": "Нельзя перейти к следующему малому этапу, не завершив текущий"
+        },
+        {
+          "en": "Every phase must last 30 days",
+          "ru": "Каждый этап длится 30 дней"
+        },
+        {
+          "en": "All requirements must remain fixed",
+          "ru": "Все требования неизменны"
+        },
+        {
+          "en": "Development begins only after deployment",
+          "ru": "Разработка начинается после внедрения"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "The lecture specifically describes XP as tiny phases completed before the next one begins; 30-day sprints are mentioned for Scrum.",
+        "ru": "На слайде XP состоит из малых этапов; следующий начинается после завершения текущего."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 24,
+        "section": "Development methodologies"
+      }
+    },
+    {
+      "id": "Q023",
+      "topic": "METHODS",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "What duration is given for a Scrum sprint in the lecture?",
+        "ru": "Какую длительность спринта Scrum указывает лекция?"
+      },
+      "options": [
+        {
+          "en": "7 days",
+          "ru": "7 дней"
+        },
+        {
+          "en": "14 days",
+          "ru": "14 дней"
+        },
+        {
+          "en": "30 days",
+          "ru": "30 дней"
+        },
+        {
+          "en": "90 days",
+          "ru": "90 дней"
+        }
+      ],
+      "correctAnswers": [
+        2
+      ],
+      "explanation": {
+        "en": "The lecture describes Scrum sprints as 30-day intervals, not a universal rule for all implementations.",
+        "ru": "В данных материалах спринты описаны как 30-дневные интервалы."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 25,
+        "section": "Development methodologies"
+      }
+    },
+    {
+      "id": "Q024",
+      "topic": "METHODS",
+      "difficulty": "easy",
+      "type": "true-false",
+      "question": {
+        "en": "The Scrum slide says a stand-up meeting occurs at the beginning or end of each day.",
+        "ru": "Слайд Scrum указывает, что стендап проходит в начале или конце каждого дня."
+      },
+      "options": [
+        {
+          "en": "True",
+          "ru": "Верно"
+        },
+        {
+          "en": "False",
+          "ru": "Неверно"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "The lecture explicitly describes daily stand-ups for monitoring development.",
+        "ru": "Лекция прямо описывает ежедневные стендапы для отслеживания разработки."
+      },
+      "source": {
+        "file": "01_01_2_2주차 이론_SDLC_f_Students_pdf-1.pdf",
+        "page": 25,
+        "section": "Development methodologies"
+      }
+    },
+    {
+      "id": "Q025",
+      "topic": "REQUIREMENTS",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "What is requirements analysis primarily intended to understand?",
+        "ru": "Какова главная цель анализа требований?"
+      },
+      "options": [
+        {
+          "en": "The final SQL syntax only",
+          "ru": "Только итоговый синтаксис SQL"
+        },
+        {
+          "en": "What users and businesses really need before building",
+          "ru": "Понять реальные нужды пользователей и бизнеса до разработки"
+        },
+        {
+          "en": "Only the color palette",
+          "ru": "Только цветовую палитру"
+        },
+        {
+          "en": "Post-deployment advertising",
+          "ru": "Рекламу после запуска"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "The lecture defines it as understanding genuine user and business needs before building the system.",
+        "ru": "Анализ требований выявляет действительные потребности до создания системы."
+      },
+      "source": {
+        "file": "01_01_06_3주차_Requirement_f_Mid_Term_t_Stu_pdf.pdf",
+        "page": 4,
+        "section": "Requirements analysis"
+      }
+    },
+    {
+      "id": "Q026",
+      "topic": "REQUIREMENTS",
+      "difficulty": "medium",
+      "type": "multi-select",
+      "question": {
+        "en": "Which reasons for requirements analysis are listed?",
+        "ru": "Какие причины важности анализа требований названы?"
+      },
+      "options": [
+        {
+          "en": "Incorrect requirements can be costly",
+          "ru": "Ошибочные требования дорого обходятся"
+        },
+        {
+          "en": "Business and IT may view needs differently",
+          "ru": "Бизнес и ИТ по-разному воспринимают нужды"
+        },
+        {
+          "en": "Misunderstood requirements can contribute to failure",
+          "ru": "Ошибки требований могут вести к провалу"
+        },
+        {
+          "en": "Requirements eliminate the need for testing",
+          "ru": "Требования отменяют тестирование"
+        }
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2
+      ],
+      "explanation": {
+        "en": "The lecture mentions failure, high cost and differing perspectives; it does not suggest skipping testing.",
+        "ru": "Материал выделяет стоимость ошибок, риск неудачи и различия между бизнесом и ИТ."
+      },
+      "source": {
+        "file": "01_01_06_3주차_Requirement_f_Mid_Term_t_Stu_pdf.pdf",
+        "page": 4,
+        "section": "Requirements analysis"
+      }
+    },
+    {
+      "id": "Q027",
+      "topic": "REQUIREMENTS",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which set contains all three main requirements-analysis sub-tasks?",
+        "ru": "Какие три основные подзадачи анализа требований?"
+      },
+      "options": [
+        {
+          "en": "Planning, coding, release",
+          "ru": "Планирование, кодирование, выпуск"
+        },
+        {
+          "en": "Elicitation, analysis & definition, validation",
+          "ru": "Выявление, анализ и определение, проверка требований"
+        },
+        {
+          "en": "Design, SQL, Scrum",
+          "ru": "Проектирование, SQL, Scrum"
+        },
+        {
+          "en": "Interview, deployment, archiving",
+          "ru": "Интервью, внедрение, архивирование"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "The slide explicitly enumerates elicitation, analysis/definition and validation.",
+        "ru": "На слайде указаны выявление, анализ/определение и валидация требований."
+      },
+      "source": {
+        "file": "01_01_06_3주차_Requirement_f_Mid_Term_t_Stu_pdf.pdf",
+        "page": 6,
+        "section": "Requirements analysis"
+      }
+    },
+    {
+      "id": "Q028",
+      "topic": "REQUIREMENTS",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which example is classified as a constraint on possible solutions?",
+        "ru": "Что является ограничением на возможное решение?"
+      },
+      "options": [
+        {
+          "en": "Customers must search for products",
+          "ru": "Покупатели ищут товары"
+        },
+        {
+          "en": "Use of a specified programming language",
+          "ru": "Обязательное использование конкретного языка программирования"
+        },
+        {
+          "en": "Customers want receipts",
+          "ru": "Покупатели хотят чеки"
+        },
+        {
+          "en": "The user can log in",
+          "ru": "Пользователь может войти"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "The constraints slide names a required programming language or product as limits on solution choice.",
+        "ru": "Требование использовать определённый язык ограничивает выбор реализации."
+      },
+      "source": {
+        "file": "01_01_06_3주차_Requirement_f_Mid_Term_t_Stu_pdf.pdf",
+        "page": 7,
+        "section": "Requirements analysis"
+      }
+    },
+    {
+      "id": "Q029",
+      "topic": "REQUIREMENTS",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Functional requirements mainly state:",
+        "ru": "Что прежде всего описывают функциональные требования?"
+      },
+      "options": [
+        {
+          "en": "How secure or fast the software is",
+          "ru": "Безопасность и скорость"
+        },
+        {
+          "en": "What operations the system must perform",
+          "ru": "Какие действия должна выполнять система"
+        },
+        {
+          "en": "Who owns the hardware",
+          "ru": "Владельца оборудования"
+        },
+        {
+          "en": "The project budget only",
+          "ru": "Только бюджет проекта"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "Functional requirements describe requested system functions; speed and security are non-functional examples.",
+        "ru": "Функциональные требования отвечают на вопрос «что делает система»."
+      },
+      "source": {
+        "file": "01_01_06_3주차_Requirement_f_Mid_Term_t_Stu_pdf.pdf",
+        "page": 8,
+        "section": "Requirements analysis"
+      }
+    },
+    {
+      "id": "Q030",
+      "topic": "REQUIREMENTS",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which is a non-functional requirement from the lecture?",
+        "ru": "Какое требование нефункциональное?"
+      },
+      "options": [
+        {
+          "en": "Allow changing cart quantity",
+          "ru": "Менять количество в корзине"
+        },
+        {
+          "en": "Send email after payment",
+          "ru": "Отправлять письмо после оплаты"
+        },
+        {
+          "en": "Guarantee at least 99.9% uptime",
+          "ru": "Гарантировать доступность не ниже 99,9%"
+        },
+        {
+          "en": "Search products by name",
+          "ru": "Искать товары по названию"
+        }
+      ],
+      "correctAnswers": [
+        2
+      ],
+      "explanation": {
+        "en": "Availability at 99.9% is a quality constraint; the other examples describe system functions.",
+        "ru": "Доступность — атрибут качества, а остальные варианты описывают функции."
+      },
+      "source": {
+        "file": "01_01_06_3주차_Requirement_f_Mid_Term_t_Stu_pdf.pdf",
+        "page": 11,
+        "section": "Requirements analysis"
+      }
+    },
+    {
+      "id": "Q031",
+      "topic": "REQUIREMENTS",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "The system sends a confirmation email after payment. How is this classified?",
+        "ru": "Система отправляет подтверждение после оплаты. Как классифицировать?"
+      },
+      "options": [
+        {
+          "en": "Functional requirement",
+          "ru": "Функциональное требование"
+        },
+        {
+          "en": "Availability requirement",
+          "ru": "Требование доступности"
+        },
+        {
+          "en": "Performance requirement",
+          "ru": "Требование производительности"
+        },
+        {
+          "en": "Security requirement",
+          "ru": "Требование безопасности"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "Sending a specific email after a trigger describes what the system does.",
+        "ru": "Отправка письма по событию описывает функцию системы."
+      },
+      "source": {
+        "file": "01_01_06_3주차_Requirement_f_Mid_Term_t_Stu_pdf.pdf",
+        "page": 10,
+        "section": "Requirements analysis"
+      }
+    },
+    {
+      "id": "Q032",
+      "topic": "REQUIREMENTS",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "A maximum average page-loading time of 2 seconds is an example of:",
+        "ru": "Среднее время загрузки страницы не более 2 секунд — это:"
+      },
+      "options": [
+        {
+          "en": "A use-case actor",
+          "ru": "Актор варианта использования"
+        },
+        {
+          "en": "A non-functional performance requirement",
+          "ru": "Нефункциональное требование производительности"
+        },
+        {
+          "en": "An ERD attribute",
+          "ru": "Атрибут ERD"
+        },
+        {
+          "en": "A business process gateway",
+          "ru": "Шлюз процесса"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "Response time describes performance rather than a user function.",
+        "ru": "Время отклика — показатель качества работы, то есть нефункциональное требование."
+      },
+      "source": {
+        "file": "01_01_06_3주차_Requirement_f_Mid_Term_t_Stu_pdf.pdf",
+        "page": 11,
+        "section": "Requirements analysis"
+      }
+    },
+    {
+      "id": "Q033",
+      "topic": "REQUIREMENTS",
+      "difficulty": "hard",
+      "type": "multi-select",
+      "question": {
+        "en": "Which quality attributes are explicitly named in the non-functional-requirements definition?",
+        "ru": "Какие атрибуты качества перечислены в определении нефункциональных требований?"
+      },
+      "options": [
+        {
+          "en": "Performance",
+          "ru": "Производительность"
+        },
+        {
+          "en": "Security",
+          "ru": "Безопасность"
+        },
+        {
+          "en": "Reliability",
+          "ru": "Надёжность"
+        },
+        {
+          "en": "Shopping-cart checkout",
+          "ru": "Оформление корзины"
+        }
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2
+      ],
+      "explanation": {
+        "en": "Performance, security and reliability are quality attributes; checkout is a function.",
+        "ru": "Производительность, безопасность и надёжность — свойства системы; оформление заказа — функция."
+      },
+      "source": {
+        "file": "01_01_06_3주차_Requirement_f_Mid_Term_t_Stu_pdf.pdf",
+        "page": 11,
+        "section": "Requirements analysis"
+      }
+    },
+    {
+      "id": "Q034",
+      "topic": "REQUIREMENTS",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Checking account balance and transferring money are examples of which target-scope class?",
+        "ru": "Проверка баланса и перевод денег относятся к:"
+      },
+      "options": [
+        {
+          "en": "System integration requirements",
+          "ru": "Интеграционным требованиям"
+        },
+        {
+          "en": "Business requirements",
+          "ru": "Бизнес-требованиям"
+        },
+        {
+          "en": "Maintenance requests",
+          "ru": "Запросам на сопровождение"
+        },
+        {
+          "en": "UI color constraints",
+          "ru": "Ограничениям цветов UI"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "The lecture classifies these banking use cases as business requirements.",
+        "ru": "В лекции такие операции приведены как бизнес-требования."
+      },
+      "source": {
+        "file": "01_01_06_3주차_Requirement_f_Mid_Term_t_Stu_pdf.pdf",
+        "page": 12,
+        "section": "Requirements analysis"
+      }
+    },
+    {
+      "id": "Q035",
+      "topic": "REQUIREMENTS",
+      "difficulty": "hard",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Under the lecture’s target-scope classification, the utility provider name and automatic payment (Yes/No) belong to:",
+        "ru": "К какой категории лекция относит имя поставщика услуг и автоплатёж (Да/Нет)?"
+      },
+      "options": [
+        {
+          "en": "Business requirements",
+          "ru": "Бизнес-требования"
+        },
+        {
+          "en": "Architecture and design requirements",
+          "ru": "Архитектурно-проектные требования"
+        },
+        {
+          "en": "System integration requirements",
+          "ru": "Требования системной интеграции"
+        },
+        {
+          "en": "Software methodology",
+          "ru": "Методология разработки"
+        }
+      ],
+      "correctAnswers": [
+        2
+      ],
+      "explanation": {
+        "en": "The slide gives those utility-billing fields as a system integration requirements example.",
+        "ru": "Поля для оплаты коммунальных услуг приведены как пример требований системной интеграции."
+      },
+      "source": {
+        "file": "01_01_06_3주차_Requirement_f_Mid_Term_t_Stu_pdf.pdf",
+        "page": 12,
+        "section": "Requirements analysis"
+      }
+    },
+    {
+      "id": "Q036",
+      "topic": "REQUIREMENTS",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "What is the first of the three elicitation steps listed in the slides?",
+        "ru": "Каков первый шаг выявления требований?"
+      },
+      "options": [
+        {
+          "en": "Write deployment code",
+          "ru": "Написать код внедрения"
+        },
+        {
+          "en": "Identify requirement information sources",
+          "ru": "Определить источники информации о требованиях"
+        },
+        {
+          "en": "Perform system maintenance",
+          "ru": "Провести сопровождение"
+        },
+        {
+          "en": "Set the sprint duration",
+          "ru": "Назначить длительность спринта"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "Elicitation first identifies information sources, then integrates information and organizes requirements.",
+        "ru": "Сначала определяют источники, затем собирают и упорядочивают сведения."
+      },
+      "source": {
+        "file": "01_01_06_3주차_Requirement_f_Mid_Term_t_Stu_pdf.pdf",
+        "page": 13,
+        "section": "Requirements analysis"
+      }
+    },
+    {
+      "id": "Q037",
+      "topic": "REQUIREMENTS",
+      "difficulty": "hard",
+      "type": "true-false",
+      "question": {
+        "en": "A stakeholder must directly use a system to be considered a stakeholder.",
+        "ru": "Заинтересованная сторона обязательно должна непосредственно пользоваться системой."
+      },
+      "options": [
+        {
+          "en": "True",
+          "ru": "Верно"
+        },
+        {
+          "en": "False",
+          "ru": "Неверно"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "The slide defines stakeholders as those affected by system operation; direct use defines a user.",
+        "ru": "Стейкхолдер — тот, кого затрагивает система; непосредственное использование определяет пользователя."
+      },
+      "source": {
+        "file": "01_01_06_3주차_Requirement_f_Mid_Term_t_Stu_pdf.pdf",
+        "page": 14,
+        "section": "Requirements analysis"
+      }
+    },
+    {
+      "id": "Q038",
+      "topic": "REQUIREMENTS",
+      "difficulty": "medium",
+      "type": "multi-select",
+      "question": {
+        "en": "Which are named information-collection methods?",
+        "ru": "Какие способы сбора требований прямо перечислены?"
+      },
+      "options": [
+        {
+          "en": "Stakeholder surveys",
+          "ru": "Опросы заинтересованных сторон"
+        },
+        {
+          "en": "User interviews",
+          "ru": "Интервью с пользователями"
+        },
+        {
+          "en": "Business-process and form review",
+          "ru": "Изучение процессов и форм"
+        },
+        {
+          "en": "Database normalization",
+          "ru": "Нормализация базы данных"
+        }
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2
+      ],
+      "explanation": {
+        "en": "Surveys, interviews and business-process/form review are listed; normalization is not an elicitation method in this slide.",
+        "ru": "Опросы, интервью и анализ форм есть в списке способов сбора требований."
+      },
+      "source": {
+        "file": "01_01_06_3주차_Requirement_f_Mid_Term_t_Stu_pdf.pdf",
+        "page": 15,
+        "section": "Requirements analysis"
+      }
+    },
+    {
+      "id": "Q039",
+      "topic": "USE CASE",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which conceptual-modeling perspective asks “What does the system do?”",
+        "ru": "Какая перспектива моделирования отвечает «Что делает система?»"
+      },
+      "options": [
+        {
+          "en": "Process perspective (BPM)",
+          "ru": "Процессная (BPM)"
+        },
+        {
+          "en": "Functional perspective (use cases)",
+          "ru": "Функциональная (use case)"
+        },
+        {
+          "en": "Data perspective (ERD)",
+          "ru": "Информационная (ERD)"
+        },
+        {
+          "en": "Physical DB perspective",
+          "ru": "Физическая БД"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "The functional perspective uses use cases to describe system services, unlike BPM sequence or ERD stored information.",
+        "ru": "Use case описывает функции и услуги системы для пользователей."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 8,
+        "section": "Use cases"
+      }
+    },
+    {
+      "id": "Q040",
+      "topic": "USE CASE",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "A use case primarily describes:",
+        "ru": "Что прежде всего описывает вариант использования (use case)?"
+      },
+      "options": [
+        {
+          "en": "How code is optimized",
+          "ru": "Оптимизацию кода"
+        },
+        {
+          "en": "How an actor interacts with a system to reach a goal",
+          "ru": "Взаимодействие актора с системой ради цели"
+        },
+        {
+          "en": "Only database storage capacity",
+          "ru": "Только ёмкость БД"
+        },
+        {
+          "en": "Server installation steps",
+          "ru": "Шаги установки сервера"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "Use cases focus on actors and goals, not internal implementation details.",
+        "ru": "Use case показывает достижение цели актором через взаимодействие с системой."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 10,
+        "section": "Use cases"
+      }
+    },
+    {
+      "id": "Q041",
+      "topic": "USE CASE",
+      "difficulty": "medium",
+      "type": "true-false",
+      "question": {
+        "en": "The use-case lecture emphasizes HOW a function is programmed rather than WHAT the system does.",
+        "ru": "В лекции use case делает акцент на КАК программируется функция, а не на ЧТО делает система."
+      },
+      "options": [
+        {
+          "en": "True",
+          "ru": "Верно"
+        },
+        {
+          "en": "False",
+          "ru": "Неверно"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "The lecture explicitly emphasizes what the system does, not how it is implemented.",
+        "ru": "Лекция делает акцент на действиях системы, а не деталях реализации."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 10,
+        "section": "Use cases"
+      }
+    },
+    {
+      "id": "Q042",
+      "topic": "USE CASE",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "How do use cases assist user acceptance testing (UAT)?",
+        "ru": "Как use case помогает приёмочному тестированию (UAT)?"
+      },
+      "options": [
+        {
+          "en": "They replace all testing tools",
+          "ru": "Заменяет все инструменты тестов"
+        },
+        {
+          "en": "They serve as scenarios and benchmarks for validation",
+          "ru": "Даёт сценарии и критерии проверки"
+        },
+        {
+          "en": "They prohibit user feedback",
+          "ru": "Запрещает обратную связь"
+        },
+        {
+          "en": "They directly change SQL constraints",
+          "ru": "Непосредственно меняет SQL"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "The lecture identifies use cases as a basis for validating completed software in UAT.",
+        "ru": "Use case служит сценарием и ориентиром для проверки системы при UAT."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 11,
+        "section": "Use cases"
+      }
+    },
+    {
+      "id": "Q043",
+      "topic": "USE CASE",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Who or what can be an actor in a use-case diagram?",
+        "ru": "Кто может быть актором на диаграмме use case?"
+      },
+      "options": [
+        {
+          "en": "Only a database table",
+          "ru": "Только таблица БД"
+        },
+        {
+          "en": "An external user or other system",
+          "ru": "Внешний пользователь или другая система"
+        },
+        {
+          "en": "Only a project manager",
+          "ru": "Только руководитель проекта"
+        },
+        {
+          "en": "Only source code",
+          "ru": "Только исходный код"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "Actors can be external users or systems that interact with the modeled system.",
+        "ru": "Актор — внешний пользователь или система, взаимодействующая с анализируемой системой."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 12,
+        "section": "Use cases"
+      }
+    },
+    {
+      "id": "Q044",
+      "topic": "USE CASE",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "What notation represents the system boundary in the lecture?",
+        "ru": "Каким знаком на диаграмме показывают границу системы?"
+      },
+      "options": [
+        {
+          "en": "A large rectangle",
+          "ru": "Большим прямоугольником"
+        },
+        {
+          "en": "A diamond",
+          "ru": "Ромбом"
+        },
+        {
+          "en": "A SQL table row",
+          "ru": "Строкой SQL-таблицы"
+        },
+        {
+          "en": "A clock icon",
+          "ru": "Значком часов"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "A rectangle divides internal use cases from external actors.",
+        "ru": "Граница системы изображается прямоугольником."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 13,
+        "section": "Use cases"
+      }
+    },
+    {
+      "id": "Q045",
+      "topic": "USE CASE",
+      "difficulty": "hard",
+      "type": "multi-select",
+      "question": {
+        "en": "Which statements correctly describe the system boundary?",
+        "ru": "Какие утверждения о границе системы верны?"
+      },
+      "options": [
+        {
+          "en": "Use cases are inside the boundary",
+          "ru": "Use cases находятся внутри"
+        },
+        {
+          "en": "Actors are outside the boundary",
+          "ru": "Акторы находятся снаружи"
+        },
+        {
+          "en": "The boundary separates internal and external aspects",
+          "ru": "Граница отделяет внутреннее от внешнего"
+        },
+        {
+          "en": "The boundary is a database primary key",
+          "ru": "Граница — первичный ключ БД"
+        }
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2
+      ],
+      "explanation": {
+        "en": "The lecture places functions inside and interacting actors outside the rectangle; a PK belongs to database models.",
+        "ru": "Прямоугольник содержит функции системы, а акторы показаны вне его."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 13,
+        "section": "Use cases"
+      }
+    },
+    {
+      "id": "Q046",
+      "topic": "USE CASE",
+      "difficulty": "hard",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which use-case purpose clarifies what to build and what NOT to build?",
+        "ru": "Какая цель use case показывает, что строить, а что НЕ строить?"
+      },
+      "options": [
+        {
+          "en": "Defining system scope",
+          "ru": "Определение границ проекта"
+        },
+        {
+          "en": "Physical database modeling",
+          "ru": "Физическое моделирование БД"
+        },
+        {
+          "en": "Transaction control",
+          "ru": "Контроль транзакций"
+        },
+        {
+          "en": "Unit testing",
+          "ru": "Модульное тестирование"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "Defining scope distinguishes in-scope from out-of-scope functions.",
+        "ru": "Определение scope отделяет включённые функции от исключённых."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 11,
+        "section": "Use cases"
+      }
+    },
+    {
+      "id": "Q047",
+      "topic": "USE CASE",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Why are use cases described as a communication tool?",
+        "ru": "Почему use case — инструмент коммуникации?"
+      },
+      "options": [
+        {
+          "en": "They eliminate customers",
+          "ru": "Исключает заказчиков"
+        },
+        {
+          "en": "They give analysts, developers and customers a common language",
+          "ru": "Даёт аналитикам, разработчикам и заказчикам общий язык"
+        },
+        {
+          "en": "They only store numeric data",
+          "ru": "Хранит только числа"
+        },
+        {
+          "en": "They automatically deploy software",
+          "ru": "Автоматически внедряет ПО"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "Concrete user scenarios bridge different stakeholders’ understanding.",
+        "ru": "Конкретные сценарии помогают участникам одинаково понимать функции."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 11,
+        "section": "Use cases"
+      }
+    },
+    {
+      "id": "Q048",
+      "topic": "USE CASE",
+      "difficulty": "hard",
+      "type": "multiple-choice",
+      "question": {
+        "en": "What do relationships in a use-case diagram communicate?",
+        "ru": "Что показывают связи на диаграмме вариантов использования?"
+      },
+      "options": [
+        {
+          "en": "Connections showing how actors interact with use cases",
+          "ru": "Как акторы связаны с функциями системы"
+        },
+        {
+          "en": "Only primary-key constraints",
+          "ru": "Только ограничения PK"
+        },
+        {
+          "en": "The chronology of server upgrades",
+          "ru": "График обновлений сервера"
+        },
+        {
+          "en": "Column data types",
+          "ru": "Типы столбцов"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "The lecture defines relationships as connections between actors and use cases.",
+        "ru": "Связи обозначают взаимодействие актора с вариантами использования."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 12,
+        "section": "Use cases"
+      }
+    },
+    {
+      "id": "Q049",
+      "topic": "BPM",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "The process perspective in conceptual modeling asks:",
+        "ru": "На какой вопрос отвечает процессная перспектива BPM?"
+      },
+      "options": [
+        {
+          "en": "What is stored?",
+          "ru": "Что хранится?"
+        },
+        {
+          "en": "In what order do tasks flow?",
+          "ru": "В каком порядке идут задачи?"
+        },
+        {
+          "en": "What SQL user permissions exist?",
+          "ru": "Какие SQL-права у пользователя?"
+        },
+        {
+          "en": "How many bytes are saved?",
+          "ru": "Сколько байтов сохранено?"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "BPM models workflows, sequences and rules, so it asks about task order.",
+        "ru": "BPM моделирует порядок действий, последовательность и правила процесса."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 8,
+        "section": "Business process modeling"
+      }
+    },
+    {
+      "id": "Q050",
+      "topic": "BPM",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which statement matches the stated purpose of BPM?",
+        "ru": "Какая цель BPM указана в лекции?"
+      },
+      "options": [
+        {
+          "en": "To analyze, design and improve business processes",
+          "ru": "Анализ, проектирование и улучшение бизнес-процессов"
+        },
+        {
+          "en": "To assign only primary keys",
+          "ru": "Назначение только первичных ключей"
+        },
+        {
+          "en": "To replace requirements with code",
+          "ru": "Замена требований кодом"
+        },
+        {
+          "en": "To encrypt all records",
+          "ru": "Шифрование всех записей"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "The slide says BPM improves business processes for efficiency and clarity.",
+        "ru": "BPM применяется для анализа и совершенствования бизнес-процессов."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 20,
+        "section": "Business process modeling"
+      }
+    },
+    {
+      "id": "Q051",
+      "topic": "BPM",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "What does BPMN stand for in the slide?",
+        "ru": "Как расшифровывается BPMN в материалах?"
+      },
+      "options": [
+        {
+          "en": "Business Process Model and Notation",
+          "ru": "Business Process Model and Notation"
+        },
+        {
+          "en": "Business Program Management Network",
+          "ru": "Business Program Management Network"
+        },
+        {
+          "en": "Basic Process Memory Node",
+          "ru": "Basic Process Memory Node"
+        },
+        {
+          "en": "Binary Procedure Mapping Notation",
+          "ru": "Binary Procedure Mapping Notation"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "The lecture expands BPMN as Business Process Model and Notation.",
+        "ru": "В лекции BPMN расшифровывается как Business Process Model and Notation."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 20,
+        "section": "Business process modeling"
+      }
+    },
+    {
+      "id": "Q052",
+      "topic": "BPM",
+      "difficulty": "medium",
+      "type": "true-false",
+      "question": {
+        "en": "BPM visualizations make complex processes easier to communicate and improve.",
+        "ru": "Визуализация BPM помогает проще обсуждать и улучшать сложные процессы."
+      },
+      "options": [
+        {
+          "en": "True",
+          "ru": "Верно"
+        },
+        {
+          "en": "False",
+          "ru": "Неверно"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "The visualization slide specifically lists clearer understanding, communication, and improvement.",
+        "ru": "На слайде отмечены улучшение понимания, общения и совершенствования процессов."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 20,
+        "section": "Business process modeling"
+      }
+    },
+    {
+      "id": "Q053",
+      "topic": "BPM",
+      "difficulty": "easy",
+      "type": "multi-select",
+      "question": {
+        "en": "Which are the four basic BPMN elements listed?",
+        "ru": "Какие четыре базовых элемента BPMN перечислены?"
+      },
+      "options": [
+        {
+          "en": "Event",
+          "ru": "Событие"
+        },
+        {
+          "en": "Activity",
+          "ru": "Действие"
+        },
+        {
+          "en": "Gateway",
+          "ru": "Шлюз"
+        },
+        {
+          "en": "Flow",
+          "ru": "Поток"
+        }
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": {
+        "en": "The slide lists exactly Event, Activity, Gateway and Flow as its four basic elements.",
+        "ru": "Все четыре: событие, действие, шлюз и поток"
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 21,
+        "section": "Business process modeling"
+      }
+    },
+    {
+      "id": "Q054",
+      "topic": "BPM",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "In the BPMN element illustration, which shape is used for a gateway?",
+        "ru": "Какую форму имеет шлюз (gateway) на слайде BPMN?"
+      },
+      "options": [
+        {
+          "en": "Circle",
+          "ru": "Круг"
+        },
+        {
+          "en": "Rounded rectangle",
+          "ru": "Прямоугольник со скруглением"
+        },
+        {
+          "en": "Diamond",
+          "ru": "Ромб"
+        },
+        {
+          "en": "Straight arrow",
+          "ru": "Прямая стрелка"
+        }
+      ],
+      "correctAnswers": [
+        2
+      ],
+      "explanation": {
+        "en": "The gateway is shown as a diamond; the event is circular and the activity rounded-rectangular.",
+        "ru": "На слайде шлюз изображён ромбом, событие — кругом."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 21,
+        "section": "Business process modeling"
+      }
+    },
+    {
+      "id": "Q055",
+      "topic": "BPM",
+      "difficulty": "hard",
+      "type": "multiple-choice",
+      "question": {
+        "en": "In the illustrated sign-up BPMN flow, what follows “Check verification email” when the email is verified?",
+        "ru": "В диаграмме регистрации что следует за проверкой email, если он подтверждён?"
+      },
+      "options": [
+        {
+          "en": "Activate account",
+          "ru": "Активировать аккаунт"
+        },
+        {
+          "en": "Resend verification email",
+          "ru": "Повторно отправить письмо"
+        },
+        {
+          "en": "Create user account from scratch",
+          "ru": "Заново создать пользователя"
+        },
+        {
+          "en": "Leave the process without a result",
+          "ru": "Завершить без результата"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "The illustrated gateway sends the verified path to Activate account; the unverified path resends an email.",
+        "ru": "Подтверждённый адрес ведёт к активации; неподтверждённый — к повторной отправке."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 22,
+        "section": "Business process modeling"
+      }
+    },
+    {
+      "id": "Q056",
+      "topic": "BPM",
+      "difficulty": "hard",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which action is shown on the NO branch of the email-verified decision?",
+        "ru": "Что происходит на ветке NO у проверки подтверждения email?"
+      },
+      "options": [
+        {
+          "en": "Activate account",
+          "ru": "Активация аккаунта"
+        },
+        {
+          "en": "Resend verification email",
+          "ru": "Повторная отправка письма"
+        },
+        {
+          "en": "Start the database server",
+          "ru": "Запуск сервера БД"
+        },
+        {
+          "en": "Remove customer records",
+          "ru": "Удаление записей клиентов"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "The lecture’s sign-up BPMN shows resend verification email on the NO path.",
+        "ru": "Ветвь NO ведёт к повторной отправке письма для подтверждения."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 22,
+        "section": "Business process modeling"
+      }
+    },
+    {
+      "id": "Q057",
+      "topic": "ERD",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which representation does the lecture associate with the conceptual data model?",
+        "ru": "Что лекция связывает с концептуальной моделью данных?"
+      },
+      "options": [
+        {
+          "en": "Use case, BPM and Chen ERD",
+          "ru": "Use case, BPM и Chen ERD"
+        },
+        {
+          "en": "Only physical indexes",
+          "ru": "Только физические индексы"
+        },
+        {
+          "en": "Only executable SQL",
+          "ru": "Только исполняемый SQL"
+        },
+        {
+          "en": "Only server hardware",
+          "ru": "Только серверное оборудование"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "The conceptual stage is linked to use cases, BPM and Chen ERD for communicating with business stakeholders.",
+        "ru": "В концептуальной части указаны use case, BPM и Chen ERD."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 6,
+        "section": "ERD & data models"
+      }
+    },
+    {
+      "id": "Q058",
+      "topic": "ERD",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which conceptual perspective focuses on “What information is stored?”",
+        "ru": "Какая перспектива отвечает «Какая информация хранится?»"
+      },
+      "options": [
+        {
+          "en": "Process (BPM)",
+          "ru": "Процессная (BPM)"
+        },
+        {
+          "en": "Functional (use case)",
+          "ru": "Функциональная (use case)"
+        },
+        {
+          "en": "Data (ERD)",
+          "ru": "Данные (ERD)"
+        },
+        {
+          "en": "Testing",
+          "ru": "Тестирование"
+        }
+      ],
+      "correctAnswers": [
+        2
+      ],
+      "explanation": {
+        "en": "The data perspective uses ERD to model entities and relationships.",
+        "ru": "ERD представляет основные сущности и связи данных."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 8,
+        "section": "ERD & data models"
+      }
+    },
+    {
+      "id": "Q059",
+      "topic": "ERD",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "When starting the conceptual ERD for a shopping mall, what should be considered first?",
+        "ru": "С чего следует начать концептуальную ERD интернет-магазина?"
+      },
+      "options": [
+        {
+          "en": "Real-world shopping operations from a data perspective",
+          "ru": "С реальных операций магазина с точки зрения данных"
+        },
+        {
+          "en": "The final optimized database indexes",
+          "ru": "С оптимизации индексов"
+        },
+        {
+          "en": "The company logo",
+          "ru": "С логотипа фирмы"
+        },
+        {
+          "en": "SQL user passwords",
+          "ru": "С SQL-паролей"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "The lecture explicitly says to think about mall operations rather than immediately designing database tables.",
+        "ru": "Концептуальная ERD сначала отражает бизнес-объекты и процессы, а не техническую схему."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 25,
+        "section": "ERD & data models"
+      }
+    },
+    {
+      "id": "Q060",
+      "topic": "ERD",
+      "difficulty": "easy",
+      "type": "multi-select",
+      "question": {
+        "en": "Which objects are named as conceptual entities in the mall example?",
+        "ru": "Какие объекты названы сущностями интернет-магазина?"
+      },
+      "options": [
+        {
+          "en": "Customer",
+          "ru": "Покупатель"
+        },
+        {
+          "en": "Order",
+          "ru": "Заказ"
+        },
+        {
+          "en": "Product",
+          "ru": "Товар"
+        },
+        {
+          "en": "Delivery",
+          "ru": "Доставка"
+        }
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": {
+        "en": "The lecture lists Customer, Order, Product and Delivery as real-world business objects.",
+        "ru": "Все четыре перечислены как бизнес-объекты концептуальной модели."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 26,
+        "section": "ERD & data models"
+      }
+    },
+    {
+      "id": "Q061",
+      "topic": "ERD",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which set contains all three fundamental relationship types from the lecture?",
+        "ru": "Какие три базовых вида связей перечислены?"
+      },
+      "options": [
+        {
+          "en": "1:1, 1:M, M:N",
+          "ru": "1:1, 1:M, M:N"
+        },
+        {
+          "en": "SQL, BPM, SDLC",
+          "ru": "SQL, BPM, SDLC"
+        },
+        {
+          "en": "CREATE, ALTER, DROP",
+          "ru": "CREATE, ALTER, DROP"
+        },
+        {
+          "en": "Actor, gateway, event",
+          "ru": "Актор, шлюз, событие"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "The three basic relationship types are one-to-one, one-to-many and many-to-many.",
+        "ru": "Указаны отношения один-к-одному, один-ко-многим и многие-ко-многим."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 28,
+        "section": "ERD & data models"
+      }
+    },
+    {
+      "id": "Q062",
+      "topic": "ERD",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "A user record connected to exactly one profile record illustrates:",
+        "ru": "Один пользователь связан ровно с одним профилем. Тип связи?"
+      },
+      "options": [
+        {
+          "en": "One-to-many",
+          "ru": "Один-ко-многим"
+        },
+        {
+          "en": "Many-to-many",
+          "ru": "Многие-ко-многим"
+        },
+        {
+          "en": "One-to-one",
+          "ru": "Один-к-одному"
+        },
+        {
+          "en": "No relationship",
+          "ru": "Нет связи"
+        }
+      ],
+      "correctAnswers": [
+        2
+      ],
+      "explanation": {
+        "en": "The lecture uses a User–Profile relationship to illustrate 1:1.",
+        "ru": "Пример User–Profile показывает связь 1:1."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 29,
+        "section": "ERD & data models"
+      }
+    },
+    {
+      "id": "Q063",
+      "topic": "ERD",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "One Customer can have several Orders, but each Order belongs to one Customer. This is:",
+        "ru": "Один клиент оформляет несколько заказов, каждый заказ принадлежит одному клиенту. Тип?"
+      },
+      "options": [
+        {
+          "en": "Many-to-many",
+          "ru": "Многие-ко-многим"
+        },
+        {
+          "en": "One-to-one",
+          "ru": "Один-к-одному"
+        },
+        {
+          "en": "One-to-many",
+          "ru": "Один-ко-многим"
+        },
+        {
+          "en": "No relationship",
+          "ru": "Нет связи"
+        }
+      ],
+      "correctAnswers": [
+        2
+      ],
+      "explanation": {
+        "en": "A single Customer relating to many Orders is the lecture’s 1:M pattern.",
+        "ru": "Это связь 1:M от Customer к Order."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 31,
+        "section": "ERD & data models"
+      }
+    },
+    {
+      "id": "Q064",
+      "topic": "ERD",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "If each entity can relate to many instances of the other, the relationship is:",
+        "ru": "Если экземпляры каждой сущности могут связываться со многими на другой стороне, то это:"
+      },
+      "options": [
+        {
+          "en": "M:N",
+          "ru": "M:N"
+        },
+        {
+          "en": "1:1",
+          "ru": "1:1"
+        },
+        {
+          "en": "1:M",
+          "ru": "1:M"
+        },
+        {
+          "en": "A foreign key alone",
+          "ru": "Только внешний ключ"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "A many-to-many relationship allows many instances on both sides.",
+        "ru": "Связь M:N допускает множество связанных экземпляров с обеих сторон."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 33,
+        "section": "ERD & data models"
+      }
+    },
+    {
+      "id": "Q065",
+      "topic": "ERD",
+      "difficulty": "hard",
+      "type": "multiple-choice",
+      "question": {
+        "en": "In the Chen notation (x, y) described in the slide, what is x?",
+        "ru": "Что означает x в обозначении кардинальности Chen (x, y)?"
+      },
+      "options": [
+        {
+          "en": "Maximum cardinality",
+          "ru": "Максимум"
+        },
+        {
+          "en": "Minimum cardinality",
+          "ru": "Минимум"
+        },
+        {
+          "en": "Primary key count",
+          "ru": "Число первичных ключей"
+        },
+        {
+          "en": "Number of SQL columns",
+          "ru": "Число SQL-столбцов"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "The first number is the minimum and the second number the maximum.",
+        "ru": "Первое число — минимальное количество, второе — максимальное."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 34,
+        "section": "ERD & data models"
+      }
+    },
+    {
+      "id": "Q066",
+      "topic": "ERD",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "What is the purpose of a primary key (PK)?",
+        "ru": "Для чего нужен первичный ключ (PK)?"
+      },
+      "options": [
+        {
+          "en": "To uniquely identify each record",
+          "ru": "Уникально определять каждую запись"
+        },
+        {
+          "en": "To show a process branch",
+          "ru": "Показывать ветвление процесса"
+        },
+        {
+          "en": "To specify a UI button",
+          "ru": "Обозначать кнопку UI"
+        },
+        {
+          "en": "To grant SQL privileges",
+          "ru": "Выдавать права SQL"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "A PK uniquely identifies each table record; permissions are handled by control commands.",
+        "ru": "PK однозначно идентифицирует строку таблицы."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 37,
+        "section": "ERD & data models"
+      }
+    },
+    {
+      "id": "Q067",
+      "topic": "ERD",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "What does a foreign key (FK) do?",
+        "ru": "Какую функцию выполняет внешний ключ (FK)?"
+      },
+      "options": [
+        {
+          "en": "Indicates the color scheme",
+          "ru": "Определяет цвета"
+        },
+        {
+          "en": "References a key in another table to establish a relationship",
+          "ru": "Ссылается на ключ другой таблицы и устанавливает связь"
+        },
+        {
+          "en": "Creates a stand-up meeting",
+          "ru": "Создаёт стендап"
+        },
+        {
+          "en": "Measures loading time",
+          "ru": "Измеряет загрузку"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "The lecture explains that a foreign key references a primary or candidate key in another table.",
+        "ru": "FK связывает таблицы через ссылку на ключ другой таблицы."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 37,
+        "section": "ERD & data models"
+      }
+    },
+    {
+      "id": "Q068",
+      "topic": "ERD",
+      "difficulty": "hard",
+      "type": "multi-select",
+      "question": {
+        "en": "Match the ERD terms to their database-table counterparts. Which matches are on the slide?",
+        "ru": "Какие соответствия ERD и таблицы приведены на слайде?"
+      },
+      "options": [
+        {
+          "en": "Entity → Table",
+          "ru": "Сущность → Таблица"
+        },
+        {
+          "en": "Attribute → Column",
+          "ru": "Атрибут → Столбец"
+        },
+        {
+          "en": "Instance → Row",
+          "ru": "Экземпляр → Строка"
+        },
+        {
+          "en": "Relationship → Foreign key",
+          "ru": "Связь → Внешний ключ"
+        }
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": {
+        "en": "All four mappings appear in the terminology comparison.",
+        "ru": "Все четыре соответствия прямо перечислены в таблице терминов."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 38,
+        "section": "ERD & data models"
+      }
+    },
+    {
+      "id": "Q069",
+      "topic": "ERD",
+      "difficulty": "hard",
+      "type": "true-false",
+      "question": {
+        "en": "In the Order_Item example, OrderID alone uniquely identifies an Order_Item row.",
+        "ru": "В примере Order_Item одного OrderID достаточно для уникальной идентификации строки."
+      },
+      "options": [
+        {
+          "en": "True",
+          "ru": "Верно"
+        },
+        {
+          "en": "False",
+          "ru": "Неверно"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "Multiple products can share one OrderID, so the lecture uses OrderID together with ProductID.",
+        "ru": "Один заказ может иметь несколько товаров, поэтому ключ состоит из OrderID и ProductID."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 41,
+        "section": "ERD & data models"
+      }
+    },
+    {
+      "id": "Q070",
+      "topic": "ERD",
+      "difficulty": "hard",
+      "type": "multiple-choice",
+      "question": {
+        "en": "For order 1001 with two mice P01 and one keyboard P02, what distinguishes the two Order_Item rows?",
+        "ru": "Для заказа 1001 с мышью P01 и клавиатурой P02 что отличает две строки Order_Item?"
+      },
+      "options": [
+        {
+          "en": "Different OrderID values",
+          "ru": "Разные OrderID"
+        },
+        {
+          "en": "Different ProductID values, combined with the same OrderID",
+          "ru": "Разные ProductID вместе с одним OrderID"
+        },
+        {
+          "en": "Different customer emails",
+          "ru": "Разные email клиентов"
+        },
+        {
+          "en": "Different SQL categories",
+          "ru": "Разные категории SQL"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "The example shows (1001,P01,2) and (1001,P02,1), illustrating the composite key.",
+        "ru": "Пример содержит пары (1001,P01) и (1001,P02)."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 42,
+        "section": "ERD & data models"
+      }
+    },
+    {
+      "id": "Q071",
+      "topic": "ERD",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "What is the role of Order_Item between Order and Product?",
+        "ru": "Какова роль Order_Item между Order и Product?"
+      },
+      "options": [
+        {
+          "en": "A stand-up scheduler",
+          "ru": "Планировщик стендапов"
+        },
+        {
+          "en": "An associative entity connecting orders and products",
+          "ru": "Связующая сущность между заказами и товарами"
+        },
+        {
+          "en": "A system boundary",
+          "ru": "Граница системы"
+        },
+        {
+          "en": "A replacement for all product attributes",
+          "ru": "Замена всех атрибутов товара"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "Order_Item links Order and Product and carries fields such as Quantity.",
+        "ru": "Order_Item связывает заказ и товар и хранит количество."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 40,
+        "section": "ERD & data models"
+      }
+    },
+    {
+      "id": "Q072",
+      "topic": "ERD",
+      "difficulty": "hard",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Where are NOT NULL, UNIQUE and data types usually specified, according to the IE ERD slide?",
+        "ru": "Где обычно задают NOT NULL, UNIQUE и типы данных по лекции?"
+      },
+      "options": [
+        {
+          "en": "Only in the actor diagram",
+          "ru": "Только в диаграмме акторов"
+        },
+        {
+          "en": "In relational schema or detailed database design",
+          "ru": "В реляционной схеме или подробном проекте БД"
+        },
+        {
+          "en": "Only in customer interviews",
+          "ru": "Только в интервью"
+        },
+        {
+          "en": "In Scrum stand-ups",
+          "ru": "На Scrum-стендапах"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "The slide notes those constraints usually belong to relational schema/design details, not a basic IE ERD.",
+        "ru": "Эти ограничения обычно задают в подробной реляционной схеме."
+      },
+      "source": {
+        "file": "01_01_06_4_5주차_모델_Order샘플_Use_case_BPM_ERD_f_Mid_Exam_t_Stu_pdf.pdf",
+        "page": 37,
+        "section": "ERD & data models"
+      }
+    },
+    {
+      "id": "Q073",
+      "topic": "SQL",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "What does SQL stand for?",
+        "ru": "Как расшифровывается SQL?"
+      },
+      "options": [
+        {
+          "en": "Structured Query Language",
+          "ru": "Structured Query Language"
+        },
+        {
+          "en": "System Quality Lifecycle",
+          "ru": "System Quality Lifecycle"
+        },
+        {
+          "en": "Server Queue Logic",
+          "ru": "Server Queue Logic"
+        },
+        {
+          "en": "Software Query Layout",
+          "ru": "Software Query Layout"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "SQL is Structured Query Language and is used to manage relational databases.",
+        "ru": "SQL означает Structured Query Language — язык управления реляционными БД."
+      },
+      "source": {
+        "file": "01_01_06_2_6주차_sql_이론_f_Mid_Exam_t_Students_pdf_ _ _.pdf",
+        "page": 14,
+        "section": "SQL fundamentals & examples"
+      }
+    },
+    {
+      "id": "Q074",
+      "topic": "SQL",
+      "difficulty": "medium",
+      "type": "multi-select",
+      "question": {
+        "en": "Which tasks can SQL perform, according to the lecture?",
+        "ru": "Какие задачи SQL может выполнять по лекции?"
+      },
+      "options": [
+        {
+          "en": "Define data structures",
+          "ru": "Определять структуры данных"
+        },
+        {
+          "en": "Insert and modify data",
+          "ru": "Вставлять и менять данные"
+        },
+        {
+          "en": "Query information",
+          "ru": "Запрашивать информацию"
+        },
+        {
+          "en": "Control database access",
+          "ru": "Управлять доступом к БД"
+        }
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": {
+        "en": "All four uses appear on the “What is SQL?” slide.",
+        "ru": "Все четыре возможности перечислены на слайде о SQL."
+      },
+      "source": {
+        "file": "01_01_06_2_6주차_sql_이론_f_Mid_Exam_t_Students_pdf_ _ _.pdf",
+        "page": 14,
+        "section": "SQL fundamentals & examples"
+      }
+    },
+    {
+      "id": "Q075",
+      "topic": "SQL",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which category contains CREATE, ALTER, DROP and TRUNCATE?",
+        "ru": "К какой категории относятся CREATE, ALTER, DROP, TRUNCATE?"
+      },
+      "options": [
+        {
+          "en": "DCL",
+          "ru": "DCL"
+        },
+        {
+          "en": "TCL",
+          "ru": "TCL"
+        },
+        {
+          "en": "DDL",
+          "ru": "DDL"
+        },
+        {
+          "en": "DML",
+          "ru": "DML"
+        }
+      ],
+      "correctAnswers": [
+        2
+      ],
+      "explanation": {
+        "en": "Those four structure-definition commands are listed under DDL.",
+        "ru": "Команды определения структуры относятся к DDL."
+      },
+      "source": {
+        "file": "01_01_06_2_6주차_sql_이론_f_Mid_Exam_t_Students_pdf_ _ _.pdf",
+        "page": 16,
+        "section": "SQL fundamentals & examples"
+      }
+    },
+    {
+      "id": "Q076",
+      "topic": "SQL",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which commands belong to DML in the lecture?",
+        "ru": "Какие команды относятся к DML?"
+      },
+      "options": [
+        {
+          "en": "SELECT, INSERT, UPDATE, DELETE",
+          "ru": "SELECT, INSERT, UPDATE, DELETE"
+        },
+        {
+          "en": "CREATE, DROP, ALTER, TRUNCATE",
+          "ru": "CREATE, DROP, ALTER, TRUNCATE"
+        },
+        {
+          "en": "GRANT, REVOKE",
+          "ru": "GRANT, REVOKE"
+        },
+        {
+          "en": "COMMIT, ROLLBACK",
+          "ru": "COMMIT, ROLLBACK"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "DML manipulates table data; DDL changes structures, DCL access and TCL transactions.",
+        "ru": "DML содержит SELECT, INSERT, UPDATE и DELETE."
+      },
+      "source": {
+        "file": "01_01_06_2_6주차_sql_이론_f_Mid_Exam_t_Students_pdf_ _ _.pdf",
+        "page": 16,
+        "section": "SQL fundamentals & examples"
+      }
+    },
+    {
+      "id": "Q077",
+      "topic": "SQL",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which pair belongs to DCL, not TCL?",
+        "ru": "Какая пара относится к DCL, а не TCL?"
+      },
+      "options": [
+        {
+          "en": "COMMIT and ROLLBACK",
+          "ru": "COMMIT и ROLLBACK"
+        },
+        {
+          "en": "INSERT and DELETE",
+          "ru": "INSERT и DELETE"
+        },
+        {
+          "en": "GRANT and REVOKE",
+          "ru": "GRANT и REVOKE"
+        },
+        {
+          "en": "CREATE and ALTER",
+          "ru": "CREATE и ALTER"
+        }
+      ],
+      "correctAnswers": [
+        2
+      ],
+      "explanation": {
+        "en": "The slide categorizes GRANT/REVOKE as DCL and COMMIT/ROLLBACK as TCL.",
+        "ru": "GRANT и REVOKE управляют доступом (DCL)."
+      },
+      "source": {
+        "file": "01_01_06_2_6주차_sql_이론_f_Mid_Exam_t_Students_pdf_ _ _.pdf",
+        "page": 16,
+        "section": "SQL fundamentals & examples"
+      }
+    },
+    {
+      "id": "Q078",
+      "topic": "SQL",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which pair is classified as transaction control (TCL)?",
+        "ru": "Какая пара управляет транзакциями (TCL)?"
+      },
+      "options": [
+        {
+          "en": "SELECT and INSERT",
+          "ru": "SELECT и INSERT"
+        },
+        {
+          "en": "COMMIT and ROLLBACK",
+          "ru": "COMMIT и ROLLBACK"
+        },
+        {
+          "en": "GRANT and REVOKE",
+          "ru": "GRANT и REVOKE"
+        },
+        {
+          "en": "CREATE and DROP",
+          "ru": "CREATE и DROP"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "The lecture explicitly lists COMMIT and ROLLBACK as TCL.",
+        "ru": "COMMIT и ROLLBACK отнесены к категории TCL."
+      },
+      "source": {
+        "file": "01_01_06_2_6주차_sql_이론_f_Mid_Exam_t_Students_pdf_ _ _.pdf",
+        "page": 16,
+        "section": "SQL fundamentals & examples"
+      }
+    },
+    {
+      "id": "Q079",
+      "topic": "SQL",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which statement creates the database sskim_db?",
+        "ru": "Какая команда создаёт базу sskim_db?"
+      },
+      "options": [
+        {
+          "en": "USE DATABASE sskim_db;",
+          "ru": "USE DATABASE sskim_db;"
+        },
+        {
+          "en": "CREATE DATABASE sskim_db;",
+          "ru": "CREATE DATABASE sskim_db;"
+        },
+        {
+          "en": "INSERT DATABASE sskim_db;",
+          "ru": "INSERT DATABASE sskim_db;"
+        },
+        {
+          "en": "SHOW sskim_db;",
+          "ru": "SHOW sskim_db;"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "The CREATE DATABASE syntax is illustrated on the database-creation slide.",
+        "ru": "Для создания базы применяется CREATE DATABASE sskim_db;"
+      },
+      "source": {
+        "file": "01_01_06_2_6주차_sql_이론_f_Mid_Exam_t_Students_pdf_ _ _.pdf",
+        "page": 20,
+        "section": "SQL fundamentals & examples"
+      }
+    },
+    {
+      "id": "Q080",
+      "topic": "SQL",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "After creating a database, which command selects it for use in the lecture example?",
+        "ru": "Какая команда выбирает базу sskim_db для работы?"
+      },
+      "options": [
+        {
+          "en": "SHOW TABLES;",
+          "ru": "SHOW TABLES;"
+        },
+        {
+          "en": "USE sskim_db;",
+          "ru": "USE sskim_db;"
+        },
+        {
+          "en": "DROP sskim_db;",
+          "ru": "DROP sskim_db;"
+        },
+        {
+          "en": "DESC sskim_db;",
+          "ru": "DESC sskim_db;"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "The example switches to the new database with USE sskim_db.",
+        "ru": "Команда USE sskim_db; выбирает текущую базу."
+      },
+      "source": {
+        "file": "01_01_06_2_6주차_sql_이론_f_Mid_Exam_t_Students_pdf_ _ _.pdf",
+        "page": 20,
+        "section": "SQL fundamentals & examples"
+      }
+    },
+    {
+      "id": "Q081",
+      "topic": "SQL",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which statement displays the tables in the selected MySQL database?",
+        "ru": "Какая команда показывает таблицы выбранной базы MySQL?"
+      },
+      "options": [
+        {
+          "en": "SHOW TABLES;",
+          "ru": "SHOW TABLES;"
+        },
+        {
+          "en": "SHOW COLUMNS ONLY;",
+          "ru": "SHOW COLUMNS ONLY;"
+        },
+        {
+          "en": "LIST DATABASE;",
+          "ru": "LIST DATABASE;"
+        },
+        {
+          "en": "SELECT TABLES;",
+          "ru": "SELECT TABLES;"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "The lab command list includes SHOW TABLES; for viewing tables.",
+        "ru": "На слайде лабораторной работы указано SHOW TABLES;"
+      },
+      "source": {
+        "file": "01_01_06_2_6주차_sql_이론_f_Mid_Exam_t_Students_pdf_ _ _.pdf",
+        "page": 9,
+        "section": "SQL fundamentals & examples"
+      }
+    },
+    {
+      "id": "Q082",
+      "topic": "SQL",
+      "difficulty": "hard",
+      "type": "true-false",
+      "question": {
+        "en": "In the lecture, a primary key must have unique non-NULL values.",
+        "ru": "По лекции значения первичного ключа должны быть уникальными и не равными NULL."
+      },
+      "options": [
+        {
+          "en": "True",
+          "ru": "Верно"
+        },
+        {
+          "en": "False",
+          "ru": "Неверно"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "The primary-key slide explicitly requires uniqueness and forbids NULL.",
+        "ru": "На слайде первичный ключ требует уникальности и запрещает NULL."
+      },
+      "source": {
+        "file": "01_01_06_2_6주차_sql_이론_f_Mid_Exam_t_Students_pdf_ _ _.pdf",
+        "page": 23,
+        "section": "SQL fundamentals & examples"
+      }
+    },
+    {
+      "id": "Q083",
+      "topic": "SQL",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "What does AUTO_INCREMENT mean for CustomerID in the example?",
+        "ru": "Что означает AUTO_INCREMENT для CustomerID?"
+      },
+      "options": [
+        {
+          "en": "The user must always supply the ID",
+          "ru": "ID всегда вводит пользователь"
+        },
+        {
+          "en": "The database automatically generates the ID value",
+          "ru": "База автоматически формирует ID"
+        },
+        {
+          "en": "The email must be unique",
+          "ru": "Email обязан быть уникальным"
+        },
+        {
+          "en": "The table is deleted after insertion",
+          "ru": "Таблица удаляется после вставки"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "AUTO_INCREMENT lets the database generate CustomerID during an INSERT without an explicit value.",
+        "ru": "При INSERT база самостоятельно назначает идентификатор."
+      },
+      "source": {
+        "file": "01_01_06_2_6주차_sql_이론_f_Mid_Exam_t_Students_pdf_ _ _.pdf",
+        "page": 25,
+        "section": "SQL fundamentals & examples"
+      }
+    },
+    {
+      "id": "Q084",
+      "topic": "SQL",
+      "difficulty": "hard",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which constraint establishes the Orders-to-Customer relationship in the SQL example?",
+        "ru": "Какое ограничение связывает Orders с Customer?"
+      },
+      "options": [
+        {
+          "en": "FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID)",
+          "ru": "FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID)"
+        },
+        {
+          "en": "PRIMARY KEY (OrderDate)",
+          "ru": "PRIMARY KEY (OrderDate)"
+        },
+        {
+          "en": "NOT NULL (ProductID)",
+          "ru": "NOT NULL (ProductID)"
+        },
+        {
+          "en": "TRUNCATE Orders",
+          "ru": "TRUNCATE Orders"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "The example declares CustomerID as a foreign key referring to Customer(CustomerID).",
+        "ru": "Внешний ключ Orders.CustomerID ссылается на Customer.CustomerID."
+      },
+      "source": {
+        "file": "01_01_06_2_6주차_sql_이론_f_Mid_Exam_t_Students_pdf_ _ _.pdf",
+        "page": 28,
+        "section": "SQL fundamentals & examples"
+      }
+    },
+    {
+      "id": "Q085",
+      "topic": "SQL",
+      "difficulty": "hard",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Why is Order_Item called an associative table in the SQL slides?",
+        "ru": "Почему Order_Item называется связующей таблицей?"
+      },
+      "options": [
+        {
+          "en": "It replaces the Customer table",
+          "ru": "Заменяет Customer"
+        },
+        {
+          "en": "It resolves a many-to-many relationship between Orders and Product",
+          "ru": "Разрешает связь многие-ко-многим между Orders и Product"
+        },
+        {
+          "en": "It guarantees 99.9% uptime",
+          "ru": "Гарантирует доступность 99,9%"
+        },
+        {
+          "en": "It holds user passwords only",
+          "ru": "Хранит только пароли"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "The lecture says Order_Item bridges Orders and Product while Orders–Order_Item is one-to-many.",
+        "ru": "Order_Item связывает заказы с товарами, превращая M:N в связи через промежуточную таблицу."
+      },
+      "source": {
+        "file": "01_01_06_2_6주차_sql_이론_f_Mid_Exam_t_Students_pdf_ _ _.pdf",
+        "page": 30,
+        "section": "SQL fundamentals & examples"
+      }
+    },
+    {
+      "id": "Q086",
+      "topic": "SQL",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which SQL statement correctly uses an explicit column list for insertion?",
+        "ru": "Какой оператор корректно вставляет запись с явным списком столбцов?"
+      },
+      "options": [
+        {
+          "en": "INSERT INTO Customer (Name, Email) VALUES ('Ana', 'a@example.com');",
+          "ru": "INSERT INTO Customer (Name, Email) VALUES ('Ana', 'a@example.com');"
+        },
+        {
+          "en": "INSERT Customer VALUES Name, Email;",
+          "ru": "INSERT Customer VALUES Name, Email;"
+        },
+        {
+          "en": "ADD INTO Customer (Name) FROM Ana;",
+          "ru": "ADD INTO Customer (Name) FROM Ana;"
+        },
+        {
+          "en": "SELECT INTO Customer (Name) Ana;",
+          "ru": "SELECT INTO Customer (Name) Ana;"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "The lecture gives INSERT INTO table (columns) VALUES (values) as the explicit-column syntax.",
+        "ru": "Синтаксис в лекции: INSERT INTO таблица (столбцы) VALUES (значения)."
+      },
+      "source": {
+        "file": "01_01_06_2_6주차_sql_이론_f_Mid_Exam_t_Students_pdf_ _ _.pdf",
+        "page": 33,
+        "section": "SQL fundamentals & examples"
+      }
+    },
+    {
+      "id": "Q087",
+      "topic": "SQL",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which example follows the CREATE TABLE syntax taught in the SQL lecture?",
+        "ru": "Какой пример соответствует синтаксису CREATE TABLE из SQL-лекции?"
+      },
+      "options": [
+        {
+          "en": "CREATE TABLE Customer (CustomerID INT);",
+          "ru": "CREATE TABLE Customer (CustomerID INT);"
+        },
+        {
+          "en": "CREATE DATABASE Customer (CustomerID INT);",
+          "ru": "CREATE DATABASE Customer (CustomerID INT);"
+        },
+        {
+          "en": "SELECT TABLE Customer (CustomerID INT);",
+          "ru": "SELECT TABLE Customer (CustomerID INT);"
+        },
+        {
+          "en": "INSERT TABLE Customer (CustomerID INT);",
+          "ru": "INSERT TABLE Customer (CustomerID INT);"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "CREATE TABLE specifies the table name, then column names and data types in parentheses; CREATE DATABASE creates a database instead.",
+        "ru": "CREATE TABLE указывает имя таблицы, затем столбцы и типы данных в скобках; CREATE DATABASE создаёт базу, а не таблицу."
+      },
+      "source": {
+        "file": "01_01_06_2_6주차_sql_이론_f_Mid_Exam_t_Students_pdf_ _ _.pdf",
+        "page": 22,
+        "section": "SQL fundamentals & examples"
+      }
+    },
+    {
+      "id": "Q088",
+      "topic": "SQL",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which syntax inserts more than one Customer row in a single statement?",
+        "ru": "Как вставить несколько строк Customer одним запросом?"
+      },
+      "options": [
+        {
+          "en": "One VALUES clause with multiple parenthesized value tuples",
+          "ru": "Несколько кортежей в одном VALUES"
+        },
+        {
+          "en": "One SELECT statement without INSERT",
+          "ru": "Только SELECT без INSERT"
+        },
+        {
+          "en": "A separate CREATE DATABASE per row",
+          "ru": "Отдельная CREATE DATABASE для строки"
+        },
+        {
+          "en": "One GRANT command per row",
+          "ru": "По GRANT на строку"
+        }
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "explanation": {
+        "en": "The multi-row example places several tuples after VALUES, separated by commas.",
+        "ru": "В примере VALUES содержит несколько наборов значений через запятую."
+      },
+      "source": {
+        "file": "01_01_06_2_6주차_sql_이론_f_Mid_Exam_t_Students_pdf_ _ _.pdf",
+        "page": 35,
+        "section": "SQL fundamentals & examples"
+      }
+    },
+    {
+      "id": "Q089",
+      "topic": "SQL",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "question": {
+        "en": "What does SELECT * FROM Customer; retrieve?",
+        "ru": "Что возвращает SELECT * FROM Customer;?"
+      },
+      "options": [
+        {
+          "en": "Only CustomerID",
+          "ru": "Только CustomerID"
+        },
+        {
+          "en": "All columns from Customer",
+          "ru": "Все столбцы из Customer"
+        },
+        {
+          "en": "Only Name",
+          "ru": "Только Name"
+        },
+        {
+          "en": "All database names",
+          "ru": "Имена всех баз"
+        }
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "explanation": {
+        "en": "An asterisk selects all columns from the named table Customer.",
+        "ru": "Звёздочка означает выбор всех столбцов указанной таблицы."
+      },
+      "source": {
+        "file": "01_01_06_2_6주차_sql_이론_f_Mid_Exam_t_Students_pdf_ _ _.pdf",
+        "page": 41,
+        "section": "SQL fundamentals & examples"
+      }
+    },
+    {
+      "id": "Q090",
+      "topic": "SQL",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "question": {
+        "en": "Which statement selects only the Name column from Members?",
+        "ru": "Как выбрать только столбец Name из Members?"
+      },
+      "options": [
+        {
+          "en": "SELECT Members FROM Name;",
+          "ru": "SELECT Members FROM Name;"
+        },
+        {
+          "en": "SELECT * FROM Members;",
+          "ru": "SELECT * FROM Members;"
+        },
+        {
+          "en": "SELECT Name FROM Members;",
+          "ru": "SELECT Name FROM Members;"
+        },
+        {
+          "en": "FIND Name FROM Members;",
+          "ru": "FIND Name FROM Members;"
+        }
+      ],
+      "correctAnswers": [
+        2
+      ],
+      "explanation": {
+        "en": "The slide’s quiz tests SELECT column FROM table; * would select all columns.",
+        "ru": "Нужен SELECT Name FROM Members; звёздочка выбрала бы все столбцы."
+      },
+      "source": {
+        "file": "01_01_06_2_6주차_sql_이론_f_Mid_Exam_t_Students_pdf_ _ _.pdf",
+        "page": 43,
+        "section": "SQL fundamentals & examples"
+      }
+    }
+  ]
+}</script>
+<script>
+(()=>{'use strict';
+const BANK=JSON.parse(document.getElementById('question-bank').textContent);
+const $=sel=>document.querySelector(sel);const app=$('#app');
+window.addEventListener('error',e=>{if(!app)return;let msg=document.createElement('div');msg.className='card';msg.style.margin='18px auto';msg.style.maxWidth='740px';msg.innerHTML='<h2>App error</h2><p>The page encountered a JavaScript error. Try opening the extracted HTML in Chrome or Edge instead of using a file preview.</p>';app.prepend(msg);});
+const UI={
+ en:{enterIdSetup:'Student ID',enterIdGuide:'Enter your Student ID here, then press Start quiz below. There is no separate Continue step.',enterIdError:'Enter a Student ID of 3–32 characters (letters, numbers, hyphens or underscores).',themeDark:'Dark mode',themeLight:'Light mode',brand:'Midterm preparation · Offline quiz',privacy:'Offline • No accounts, ads, analytics or network requests • Progress stays in this browser when storage is available.',hello:'Start your midterm preparation',helloText:'Enter a Student ID to label your attempts. This is not an account or secure login.',id:'Student ID',idHint:'Use 3–32 letters, digits, hyphens or underscores (e.g. I25A or U20261234). Leading/trailing spaces are removed.',idErr:'Enter 3–32 characters, starting with a letter or digit. Use only letters, digits, - or _.',continue:'Continue',idChange:'Not you? Change ID',pick:'Configure your quiz',pickText:'Choose topics and how you want to study. Every answer can be traced to a lecture PDF.',topics:'Topics',topicCount:'questions',selectedPool:'Questions available in selected topics',selectAll:'Select all',clearAll:'Clear all',number:'Number of questions',all:'All',mode:'Mode',practice:'Practice',exam:'Exam simulation',practiceDesc:'Feedback and explanations after each answer.',examDesc:'No answer feedback until submission. You can navigate questions and review flags.',timer:'Use countdown timer',minutes:'Minutes',shuffleQ:'Shuffle question order',shuffleO:'Shuffle answer options',about:'About / how to use',aboutText:'Select topics, choose Practice or Exam, and start. Press 1–4 to select options and Enter to check an answer or move on. Multi-select questions require checking your selection. Exam answers are final only after confirming submission. All question references use the PDF page number.',start:'Start quiz',oneTopic:'Choose at least one topic to start.',history:'Attempt history',historyEmpty:'No saved attempts for this Student ID.',savedLocal:'History is saved on this device/browser, not shared between devices.',unsaved:'Browser storage is unavailable or blocked. Attempts will work during this session, but history may disappear when you close the page.',question:'Question',of:'of',easy:'Easy',medium:'Medium',hard:'Hard',flag:'Flag for review',unflag:'Remove review flag',check:'Check answer',next:'Next question',finish:'Submit exam',feedbackCorrect:'Correct answer',feedbackWrong:'Not quite',yourChoice:'Your answer',correctChoice:'Correct answer',source:'Source',page:'PDF page',multiHint:'Select all correct answers, then confirm.',singleHint:'Choose one answer.',flagged:'Flagged',answered:'Answered',unanswered:'Unanswered',navigator:'Question navigator',navHelp:'✓ answered · – unanswered · ⚑ flagged · outlined = current',prev:'Previous question',confirmTitle:'Submit this exam?',confirmBody:'You will not be able to return to the quiz after submission. Unanswered questions count as incorrect.',unansweredCount:'Unanswered questions',cancel:'Cancel',submitConfirm:'Confirm submission',timesUp:'Time is up. Your exam has been submitted.',results:'Your results',resultsText:'Here is how you performed on the questions you attempted.',score:'Score',percent:'Percentage',time:'Time taken',date:'Date',breakdown:'Results by topic',correct:'correct',strengthen:'Topics to revisit',perfect:'No missed questions: every tested topic is at 100%.',reread:'Re-read',review:'Review answers',missed:'Retake missed only',newQuiz:'New quiz',download:'Download results',downloadDesc:'Printable HTML summary',back:'Back to results',notAnswered:'No answer selected',reviewTitle:'Answer review',reviewSubtitle:'Your choices, the correct answer, explanations, and original source pages.',noMisses:'No missed questions to retake.',trend:'Recent score trend',attempts:'Attempts',remove:'Change Student ID',switchTitle:'Change Student ID?',switchBody:'The current unfinished quiz will be lost. Already submitted attempts remain under their Student IDs.',switchConfirm:'Change ID',goToSetup:'Back to setup',answeredN:'answered',practiceReady:'Answer to reveal feedback.',examReady:'Answers are hidden until you submit.',seconds:'seconds',questionTag:'Type',kindMCQ:'Multiple choice',kindTF:'True / False',kindMulti:'Multi-select',questionsShort:'questions',none:'None',outOf:'out of',minutesMin:'Set a timer from 1 to 240 minutes.',sourceNote:'All source references use 1-based page numbers in the attached lecture PDFs.',storageSession:'Session-only history',timeLeft:'Time left',completed:'Completed',exitQuiz:'Quit quiz',quitTitle:'Quit this quiz?',quitBody:'Unsubmitted answers will be lost.',quitConfirm:'Quit quiz'},
+ ru:{enterIdSetup:'ID студента',enterIdGuide:'Введите ID студента здесь, затем нажмите «Начать тест» ниже. Отдельной кнопки «Продолжить» нет.',enterIdError:'Введите ID длиной 3–32 символа (латинские буквы, цифры, дефис или подчёркивание).',themeDark:'Тёмная тема',themeLight:'Светлая тема',brand:'Подготовка к рубежному экзамену · Без интернета',privacy:'Без интернета, аккаунтов, рекламы и аналитики • История хранится в этом браузере, если доступно хранилище.',hello:'Подготовка к рубежному экзамену',helloText:'Введите студенческий ID для отметки попыток. Это не аккаунт и не защищённый вход.',id:'ID студента',idHint:'Введите 3–32 символа: латинские буквы, цифры, дефис или подчёркивание (например, I25A). Пробелы по краям удаляются.',idErr:'Введите 3–32 символа: начните с буквы или цифры, используйте только A–Z, 0–9, дефис или _.',continue:'Продолжить',idChange:'Не ваш ID? Изменить',pick:'Настройка теста',pickText:'Выберите темы и режим обучения. У каждого вопроса есть ссылка на исходную лекцию.',topics:'Темы',topicCount:'вопросов',selectedPool:'Доступно вопросов по выбранным темам',selectAll:'Выбрать всё',clearAll:'Снять выбор',number:'Количество вопросов',all:'Все',mode:'Режим',practice:'Практика',exam:'Экзамен',practiceDesc:'Проверка и пояснение после ответа.',examDesc:'Ответы не раскрываются до сдачи. Можно переходить между вопросами и ставить флаги.',timer:'Включить таймер',minutes:'Минуты',shuffleQ:'Перемешать вопросы',shuffleO:'Перемешать варианты',about:'О приложении / инструкция',aboutText:'Выберите темы и режим, затем начните тест. Клавиши 1–4 выбирают ответы, Enter проверяет или открывает следующий вопрос. В вопросах с несколькими ответами подтвердите выбор. После сдачи экзамена нельзя вернуться к тесту. Страницы источников указаны по PDF.',start:'Начать тест',oneTopic:'Выберите хотя бы одну тему.',history:'История попыток',historyEmpty:'Для этого ID пока нет сохранённых попыток.',savedLocal:'История хранится только на этом устройстве и в этом браузере.',unsaved:'Хранилище браузера недоступно. Тест работает, но история может исчезнуть после закрытия страницы.',question:'Вопрос',of:'из',easy:'Лёгкий',medium:'Средний',hard:'Сложный',flag:'Отметить для проверки',unflag:'Убрать отметку',check:'Проверить ответ',next:'Следующий вопрос',finish:'Сдать экзамен',feedbackCorrect:'Верно',feedbackWrong:'Неверно',yourChoice:'Ваш ответ',correctChoice:'Правильный ответ',source:'Источник',page:'Страница PDF',multiHint:'Выберите все верные ответы и подтвердите.',singleHint:'Выберите один ответ.',flagged:'С флагом',answered:'Отвечен',unanswered:'Без ответа',navigator:'Навигация по вопросам',navHelp:'✓ отвечен · – без ответа · ⚑ флаг · рамка = текущий',prev:'Предыдущий вопрос',confirmTitle:'Сдать экзамен?',confirmBody:'После сдачи нельзя вернуться к вопросам. Пропущенные ответы считаются неверными.',unansweredCount:'Вопросов без ответа',cancel:'Отмена',submitConfirm:'Подтвердить сдачу',timesUp:'Время вышло. Экзамен сдан автоматически.',results:'Ваш результат',resultsText:'Оценка за выбранные вопросы.',score:'Баллы',percent:'Процент',time:'Затрачено',date:'Дата',breakdown:'Результат по темам',correct:'верно',strengthen:'Темы для повторения',perfect:'Ошибок нет: все проверенные темы решены на 100%.',reread:'Повторить',review:'Разбор ответов',missed:'Повторить ошибки',newQuiz:'Новый тест',download:'Скачать результаты',downloadDesc:'HTML для печати',back:'К результатам',notAnswered:'Нет ответа',reviewTitle:'Разбор ответов',reviewSubtitle:'Ваш выбор, верные ответы, пояснения и исходные страницы лекций.',noMisses:'Нет ошибок для повторения.',trend:'Динамика баллов',attempts:'Попытки',remove:'Изменить ID',switchTitle:'Изменить ID студента?',switchBody:'Незавершённый тест будет потерян. Сданные попытки сохранятся под прежними ID.',switchConfirm:'Изменить ID',goToSetup:'Вернуться к настройкам',answeredN:'ответов',practiceReady:'Ответьте, чтобы увидеть пояснение.',examReady:'Ответы будут раскрыты после сдачи.',seconds:'секунд',questionTag:'Тип',kindMCQ:'Один вариант',kindTF:'Верно / неверно',kindMulti:'Несколько вариантов',questionsShort:'вопросов',none:'Нет',outOf:'из',minutesMin:'Установите от 1 до 240 минут.',sourceNote:'Номера страниц приведены по PDF лекций, начиная с 1.',storageSession:'История только на эту сессию',timeLeft:'Осталось',completed:'Завершён',exitQuiz:'Выйти из теста',quitTitle:'Выйти из теста?',quitBody:'Несданные ответы будут потеряны.',quitConfirm:'Выйти'}
+};
+let storageOK=false;try{const k='__sadquiz_check__';localStorage.setItem(k,'1');localStorage.removeItem(k);storageOK=true;}catch(_){storageOK=false;}
+const memoryHistory={};const S={id:'',screen:'setup',lang:'en',theme:'light',selected:new Set(BANK.topics.map(x=>x.id)),qty:'20',mode:'practice',timer:true,minutes:30,shuffleQ:true,shuffleO:true,session:null,reviewFilter:'all'};
+try{let saved=localStorage.getItem('sadquiz_theme');if(saved==='dark'||saved==='light')S.theme=saved;}catch(_){}
+const tr=k=>UI[S.lang][k]||k;const txt=obj=>obj?.[S.lang]??obj?.en??'';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pc=n=>`${Math.round(n)}%`;const fmtDate=date=>new Date(date).toLocaleString(S.lang==='ru'?'ru-RU':'en-US',{dateStyle:'medium',timeStyle:'short'});const duration=ms=>{let sec=Math.max(0,Math.floor(ms/1000));return `${Math.floor(sec/60)}:${String(sec%60).padStart(2,'0')}`};
+const labelTopic=k=>txt(BANK.topics.find(t=>t.id===k)?.name);const difficulty=q=>tr(q.difficulty);const typeLabel=q=>tr(({ 'multiple-choice':'kindMCQ','true-false':'kindTF','multi-select':'kindMulti'})[q.type]);
+function historyKey(id=S.id){return 'sadquiz_attempts_v1:'+id.toUpperCase();}function getHistory(id=S.id){if(!id)return [];if(storageOK){try{let p=JSON.parse(localStorage.getItem(historyKey(id))||'[]');return Array.isArray(p)?p:[];}catch(_){}}return memoryHistory[historyKey(id)]||[]}
+function saveHistory(item){const key=historyKey();let h=[...getHistory(),item].slice(-80);memoryHistory[key]=h;if(storageOK){try{localStorage.setItem(key,JSON.stringify(h));}catch(_){storageOK=false;}}}
+function applyShell(){document.documentElement.lang=S.lang;document.documentElement.dataset.theme=S.theme;$('#language').value=S.lang;$('#theme').textContent=S.theme==='dark'?tr('themeLight'):tr('themeDark');$('#brand-sub').textContent=tr('brand');$('#privacy-footer').textContent=tr('privacy');$('#id-display').innerHTML=S.id?`<span class="id-chip"><strong>${esc(S.id)}</strong></span> <button id="switch-id" type="button" class="inline-link" style="font-size:.76rem">${esc(tr('idChange'))}</button>`:'';let b=$('#switch-id');if(b)b.addEventListener('click',changeId)}
+function render(){applyShell();if(S.screen==='id')renderID();if(S.screen==='setup')renderSetup();if(S.screen==='quiz')renderQuestion();if(S.screen==='results')renderResults();if(S.screen==='review')renderReview();}
+function headFocus(){let h=app.querySelector('h1');if(h){h.tabIndex=-1;h.focus({preventScroll:true})}window.scrollTo({top:0,behavior:'instant'});}
+function renderID(){app.innerHTML=`<section class="intro"><div class="card"><span class="eyebrow">SYSTEM ANALYSIS &amp; DESIGN · MIDTERM · OFFLINE EDITION 3</span><h1>${esc(tr('hello'))}</h1><p class="lead">${esc(tr('helloText'))}</p><form id="id-form" novalidate><label for="student-id" class="control-label">${esc(tr('id'))}</label><input id="student-id" class="field" maxlength="32" autocomplete="off" spellcheck="false" placeholder="e.g. U20261234" aria-describedby="id-hint id-error" required><p id="id-hint" class="small">${esc(tr('idHint'))}</p><p class="error" id="id-error" role="alert" hidden></p><button class="button full" type="submit">${esc(tr('continue'))}</button></form><div class="divider"></div><p class="small" style="margin-bottom:0">${esc(tr('privacy'))}</p></div></section>`;
+$('#student-id').addEventListener('input',()=>{const field=$('#student-id');field.removeAttribute('aria-invalid');$('#id-error').hidden=true;$('#id-error').textContent='';});
+$('#id-form').addEventListener('submit',e=>{e.preventDefault();const field=$('#student-id');const id=field.value.trim();if(!/^[A-Za-z0-9][A-Za-z0-9_-]{2,31}$/.test(id)){field.setAttribute('aria-invalid','true');$('#id-error').hidden=false;$('#id-error').textContent=tr('idErr');field.focus();return;}S.id=id;S.screen='setup';render();headFocus()});}
+function available(){return BANK.questions.filter(q=>S.selected.has(q.topic))};
+function renderHistory(){let h=getHistory();if(!h.length)return `<p class="small">${esc(tr('historyEmpty'))}</p>`;let last=h.slice(-12),pts=last.map((x,i)=>`${16+(last.length===1?160:i*320/(last.length-1))},${96-(Number(x.percentage)||0)*.77}`).join(' ');const coords=last.map((x,i)=>{let a=16+(last.length===1?160:i*320/(last.length-1)),b=96-(Number(x.percentage)||0)*.77;return `<circle cx="${a}" cy="${b}" r="3.5"/>`}).join('');let svg=`<div class="history-plot"><svg viewBox="0 0 354 112" role="img" aria-label="${esc(tr('trend'))}"><line x1="16" y1="19" x2="337" y2="19" stroke="var(--line)"/><line x1="16" y1="96" x2="337" y2="96" stroke="var(--line)"/><text x="2" y="20">100</text><text x="7" y="96">0</text><polyline points="${pts}"/>${coords}</svg></div>`;
+let rows=h.slice(-6).reverse().map(x=>`<div class="history-row"><div><strong>${esc(fmtDate(x.date))}</strong><div class="small">${esc(x.mode==='exam'?tr('exam'):tr('practice'))} · ${x.total} ${esc(tr('questionsShort'))}</div></div><strong>${esc(x.correct)}/${esc(x.total)}</strong><span class="pill">${esc(x.percentage)}%</span></div>`).join('');return svg+`<div class="history-list">${rows}</div>`;}
+function renderSetup(){const av=available(),topics=BANK.topics.map(t=>`<label class="topic-choice"><input type="checkbox" data-topic="${esc(t.id)}" ${S.selected.has(t.id)?'checked':''}><span class="topic-name">${esc(txt(t.name))}</span><span class="count">${t.count}</span></label>`).join('');
+app.innerHTML=`<section><div class="card" style="margin-bottom:20px"><span class="eyebrow">SYSTEM ANALYSIS &amp; DESIGN · OFFLINE EDITION 4</span><h1 style="margin-bottom:8px">${esc(tr('enterIdSetup'))}</h1><p class="small">${esc(tr('enterIdGuide'))}</p><label for="setup-student-id" class="control-label">${esc(tr('id'))}</label><input id="setup-student-id" class="field" value="${esc(S.id)}" maxlength="32" inputmode="text" autocomplete="off" spellcheck="false" placeholder="e.g. U2028837" aria-describedby="setup-student-error"><p id="setup-student-error" role="alert" class="error" hidden></p></div><span class="eyebrow">COURSE · MIDTERM</span><h1>${esc(tr('pick'))}</h1><p class="lead">${esc(tr('pickText'))}</p><div class="setup-grid"><div class="stack"><div class="card"><div class="panel-head"><h2>${esc(tr('topics'))}</h2><div><button id="select-all" type="button" class="inline-link">${esc(tr('selectAll'))}</button> <span class="muted">·</span> <button id="clear-all" type="button" class="inline-link">${esc(tr('clearAll'))}</button></div></div><div class="topic-grid" id="topics-grid">${topics}</div><p class="small" style="margin:14px 0 0">${esc(tr('selectedPool'))}: <strong id="available-count">${av.length}</strong></p></div><div class="card"><h2>${esc(tr('about'))}</h2><p>${esc(tr('aboutText'))}</p><p class="small">${esc(tr('sourceNote'))}</p><p class="storage-note">${esc(storageOK?tr('savedLocal'):tr('unsaved'))}</p></div></div><div class="stack"><div class="card"><h2>${esc(tr('number'))}</h2><div class="seg" role="radiogroup" aria-label="${esc(tr('number'))}">${[['10','10'],['20','20'],['all',tr('all')]].map(([v,l])=>`<label><input type="radio" name="qty" value="${v}" ${S.qty===v?'checked':''}><span>${esc(l)}</span></label>`).join('')}</div><div class="setting"><label class="control-label">${esc(tr('mode'))}</label><div class="seg" role="radiogroup" aria-label="${esc(tr('mode'))}"><label><input name="mode" type="radio" value="practice" ${S.mode==='practice'?'checked':''}><span>${esc(tr('practice'))}</span></label><label><input name="mode" type="radio" value="exam" ${S.mode==='exam'?'checked':''}><span>${esc(tr('exam'))}</span></label></div><p class="small" id="mode-description" style="margin:10px 0 0">${esc(tr(S.mode==='practice'?'practiceDesc':'examDesc'))}</p></div><div class="setting" id="timer-settings" ${S.mode==='practice'?'hidden':''}><label class="toggle"><input type="checkbox" id="timer-toggle" ${S.timer?'checked':''}> ${esc(tr('timer'))}</label><label for="timer-minutes" class="control-label">${esc(tr('minutes'))}</label><input class="field" id="timer-minutes" type="number" min="1" max="240" value="${S.minutes}" style="max-width:110px" ${S.timer?'':'disabled'}><p class="small" id="timer-error" hidden role="alert"></p></div><div class="setting"><label class="toggle"><input type="checkbox" id="shuffle-q" ${S.shuffleQ?'checked':''}> ${esc(tr('shuffleQ'))}</label><label class="toggle"><input type="checkbox" id="shuffle-o" ${S.shuffleO?'checked':''}> ${esc(tr('shuffleO'))}</label></div><button class="button full" id="start-quiz" type="button" ${av.length?'':'disabled'}>${esc(tr('start'))}</button><p class="error" id="setup-error" ${av.length?'hidden':''}>${esc(tr('oneTopic'))}</p></div><div class="card"><h2>${esc(tr('history'))}</h2><div id="history-slot">${renderHistory()}</div></div></div></section>`;
+$('#setup-student-id').addEventListener('input',e=>{const val=e.target.value.trim();$('#setup-student-error').hidden=true;e.target.removeAttribute('aria-invalid');S.id=val;applyShell();const hx=$('#history-slot');if(hx)hx.innerHTML=renderHistory();});
+$('#setup-student-id').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();$('#start-quiz').click();}});
+app.querySelectorAll('[data-topic]').forEach(el=>el.addEventListener('change',e=>{const id=e.target.dataset.topic;if(e.target.checked)S.selected.add(id);else S.selected.delete(id);updateTopicSelection()}));
+function updateTopicSelection(){const n=available().length;$('#available-count').textContent=n;$('#start-quiz').disabled=!n;$('#setup-error').hidden=!!n;}
+$('#select-all').onclick=()=>{S.selected=new Set(BANK.topics.map(t=>t.id));app.querySelectorAll('[data-topic]').forEach(x=>x.checked=true);updateTopicSelection()};$('#clear-all').onclick=()=>{S.selected.clear();app.querySelectorAll('[data-topic]').forEach(x=>x.checked=false);updateTopicSelection()};
+app.querySelectorAll('input[name="qty"]').forEach(e=>e.addEventListener('change',()=>S.qty=e.value));
+app.querySelectorAll('input[name="mode"]').forEach(e=>e.addEventListener('change',()=>{S.mode=e.value;$('#timer-settings').hidden=S.mode!=='exam';$('#mode-description').textContent=tr(S.mode==='practice'?'practiceDesc':'examDesc')}));
+$('#timer-toggle').onchange=e=>{S.timer=e.target.checked;$('#timer-minutes').disabled=!S.timer};$('#timer-minutes').onchange=e=>S.minutes=Number(e.target.value);$('#shuffle-q').onchange=e=>S.shuffleQ=e.target.checked;$('#shuffle-o').onchange=e=>S.shuffleO=e.target.checked;
+$('#start-quiz').onclick=()=>{const idInput=$('#setup-student-id');const enteredId=idInput.value.trim();if(!/^[A-Za-z0-9][A-Za-z0-9_-]{2,31}$/.test(enteredId)){idInput.setAttribute('aria-invalid','true');$('#setup-student-error').textContent=tr('enterIdError');$('#setup-student-error').hidden=false;idInput.focus();return;}S.id=enteredId;applyShell();const input=$('#timer-minutes');S.minutes=Number(input.value);if(S.mode==='exam'&&S.timer&&(!Number.isInteger(S.minutes)||S.minutes<1||S.minutes>240)){$('#timer-error').hidden=false;$('#timer-error').textContent=tr('minutesMin');input.focus();return;}startQuiz(null,S.mode)};}
+function shuffled(ar){let a=[...ar];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function sample(pool,count){if(count>=pool.length)return S.shuffleQ?shuffled(pool):pool;let groups=BANK.topics.filter(t=>S.selected.has(t.id)).map(t=>({id:t.id,arr:pool.filter(q=>q.topic===t.id)})).filter(x=>x.arr.length);groups.forEach(g=>{if(S.shuffleQ)g.arr=shuffled(g.arr)});if(S.shuffleQ)groups=shuffled(groups);const result=[];while(result.length<count){let got=false;for(const g of groups){if(result.length>=count)break;if(g.arr.length){result.push(g.arr.shift());got=true}}if(!got)break;}return S.shuffleQ?shuffled(result):result}
+let timerInterval=null;function stopTimer(){if(timerInterval){clearInterval(timerInterval);timerInterval=null}}
+function startQuiz(explicitIds=null,mode=S.mode){stopTimer();let pool=explicitIds?BANK.questions.filter(q=>explicitIds.includes(q.id)):available(),n=explicitIds?pool.length:S.qty==='all'?pool.length:Math.min(Number(S.qty),pool.length),items=explicitIds?(S.shuffleQ?shuffled(pool):pool):sample(pool,n);if(!items.length){S.screen='setup';render();return}let order={};items.forEach(q=>order[q.id]=S.shuffleO?shuffled(q.options.map((_,i)=>i)):q.options.map((_,i)=>i));S.session={questions:items,order,mode,index:0,answers:{},flags:new Set(),checked:new Set(),started:Date.now(),ended:null,completed:false,timerMinutes:S.minutes,timerOn:mode==='exam'&&S.timer,expired:false};S.screen='quiz';render();headFocus();if(S.session.timerOn){timerInterval=setInterval(tickTimer,450);tickTimer()}}
+function elapsed(){let s=S.session;return (s.ended||Date.now())-s.started}
+function remaining(){let s=S.session;return Math.max(0,s.timerMinutes*60000-elapsed())}
+function tickTimer(){if(S.screen!=='quiz'||!S.session?.timerOn){stopTimer();return}let r=remaining(),el=$('#timer-text');if(el){el.textContent=duration(r);el.classList.toggle('urgent',r<60000)}if(r<=0){S.session.expired=true;finishQuiz();$('#announcement').textContent=tr('timesUp')}}
+function currentQuestion(){return S.session.questions[S.session.index]};function answer(q){return S.session.answers[q.id]||[]};function correct(q){let a=answer(q);return a.length===q.correctAnswers.length&&a.every(x=>q.correctAnswers.includes(x))}
+function choiceText(q,index){return txt(q.options[index])}
+function listText(q,ids){return ids.length?ids.map(i=>choiceText(q,i)).join('; '):tr('notAnswered')}
+function sourceHtml(q){return `<div class="source"><strong>${esc(tr('source'))}</strong>: ${esc(q.source.file)} · ${esc(tr('page'))} ${q.source.page}</div>`}
+function renderQuestion(){const s=S.session,q=currentQuestion(),i=s.index,sel=answer(q),feedback=s.mode==='practice'&&s.checked.has(q.id),isMulti=q.type==='multi-select';let total=s.questions.length,done=s.questions.filter(q=>s.mode==='practice'?s.checked.has(q.id):answer(q).length>0).length;
+const opts=s.order[q.id].map((idx,position)=>{let marked=sel.includes(idx),isGood=q.correctAnswers.includes(idx),highlight=feedback?(isGood?'correct':marked?'incorrect':''):'';return `<label class="choice ${highlight}"><span class="shortcut" aria-hidden="true">${position+1}</span><input data-option="${idx}" data-position="${position}" name="answer-${q.id}" type="${isMulti?'checkbox':'radio'}" value="${idx}" ${marked?'checked':''} ${feedback?'disabled':''}><span class="option-text">${esc(choiceText(q,idx))}</span></label>`}).join('');
+let fb=feedback?`<div class="feedback ${correct(q)?'good':'bad'}" role="status"><strong>${esc(tr(correct(q)?'feedbackCorrect':'feedbackWrong'))}</strong><p><b>${esc(tr('correctChoice'))}:</b> ${esc(listText(q,q.correctAnswers))}</p><p>${esc(txt(q.explanation))}</p>${sourceHtml(q)}</div>`:'';
+let navigator=s.mode==='exam'?`<aside class="card"><h2>${esc(tr('navigator'))}</h2><div class="navigator">${s.questions.map((x,j)=>{let isAnswered=answer(x).length>0,flag=s.flags.has(x.id);let classes=['nav-q',isAnswered?'done':'',flag?'flagged':'',j===i?'current':''].join(' ');return `<button type="button" class="${classes}" data-goto="${j}" aria-label="${esc(tr('question'))} ${j+1}: ${esc(tr(isAnswered?'answered':'unanswered'))}${flag?', '+esc(tr('flagged')):''}" ${j===i?'aria-current="step"':''}><b>${j+1}</b><small>${flag?'⚑':isAnswered?'✓':'–'}</small></button>`}).join('')}</div><p class="nav-legend">${esc(tr('navHelp'))}</p><div class="divider"></div><p class="small">${done}/${total} ${esc(tr('answeredN'))}</p><button id="submit-side" type="button" class="button secondary full">${esc(tr('finish'))}</button></aside>`:'';
+app.innerHTML=`<div class="quiz-layout ${s.mode==='practice'?'practice':''}"><section class="card"><div class="panel-head"><div><span class="eyebrow">${esc(s.mode==='exam'?tr('exam'):tr('practice'))}</span><div class="small">${esc(tr('question'))} <strong>${i+1}</strong> ${esc(tr('of'))} <strong>${total}</strong></div></div><div class="button-row"><span class="pill">${esc(difficulty(q))}</span><span class="pill">${esc(typeLabel(q))}</span>${s.timerOn?`<span class="pill">${esc(tr('timeLeft'))}: <span id="timer-text" class="timer">${duration(remaining())}</span></span>`:''}</div></div><div class="progress-track" role="progressbar" aria-label="${esc(tr('answeredN'))}" aria-valuemin="0" aria-valuemax="${total}" aria-valuenow="${done}"><div class="progress-bar" style="width:${100*done/total}%"></div></div><h1 class="question-title">${esc(txt(q.question))}</h1><p class="small" id="answer-hint">${esc(tr(isMulti?'multiHint':'singleHint'))}</p><div class="answers" role="group" aria-describedby="answer-hint">${opts}</div>${fb}${!feedback?`<p class="small">${esc(tr(s.mode==='practice'?'practiceReady':'examReady'))}</p>`:''}<div class="quiz-foot"><div class="button-row"><button id="flag" type="button" class="flag" aria-pressed="${s.flags.has(q.id)}">${s.flags.has(q.id)?'⚑':'⚐'} ${esc(tr(s.flags.has(q.id)?'unflag':'flag'))}</button>${s.mode==='exam'&&i>0?`<button class="button secondary" id="previous" type="button">${esc(tr('prev'))}</button>`:''}</div><div class="button-row">${s.mode==='practice'?(feedback?`<button class="button" id="next" type="button">${esc(i===total-1?tr('completed'):tr('next'))}</button>`:isMulti?`<button class="button" id="check-answer" ${sel.length?'':'disabled'} type="button">${esc(tr('check'))}</button>`:''):`<button class="button" id="next" type="button">${esc(i===total-1?tr('finish'):tr('next'))}</button>`}</div></div><div class="divider"></div><button type="button" id="quit" class="inline-link small">${esc(tr('exitQuiz'))}</button></section>${navigator}</div>`;
+app.querySelectorAll('[data-option]').forEach(el=>el.onchange=()=>{if(s.mode==='practice'&&s.checked.has(q.id))return;const idx=Number(el.dataset.option);if(isMulti){let prev=answer(q);s.answers[q.id]=el.checked?[...prev,idx].sort((a,b)=>a-b):prev.filter(x=>x!==idx)}else{s.answers[q.id]=[idx];if(s.mode==='practice')s.checked.add(q.id)}renderQuestion();const target=s.mode==='practice'&&s.checked.has(q.id)?$('#next'):app.querySelector(`[data-option="${idx}"]`);target?.focus({preventScroll:true});});
+$('#flag').onclick=()=>{if(s.flags.has(q.id))s.flags.delete(q.id);else s.flags.add(q.id);renderQuestion();$('#flag')?.focus()};
+if($('#check-answer'))$('#check-answer').onclick=()=>{if(!answer(q).length)return;s.checked.add(q.id);renderQuestion();$('#next')?.focus()};
+if($('#previous'))$('#previous').onclick=()=>{s.index--;renderQuestion();headFocus()};
+if($('#next'))$('#next').onclick=()=>{if(s.mode==='exam'&&i===total-1){confirmSubmit();return}if(s.mode==='practice'&&i===total-1){finishQuiz();return}if(s.mode==='practice'&&!s.checked.has(q.id))return;s.index++;renderQuestion();headFocus()};
+if($('#submit-side'))$('#submit-side').onclick=confirmSubmit;app.querySelectorAll('[data-goto]').forEach(el=>el.onclick=()=>{s.index=Number(el.dataset.goto);renderQuestion();headFocus()});$('#quit').onclick=()=>openDialog(tr('quitTitle'),tr('quitBody'),tr('quitConfirm'),()=>{stopTimer();S.session=null;S.screen='setup';render();headFocus()});}
+function openDialog(title,body,confirmLabel,onConfirm){const root=$('#dialog-root');const previous=document.activeElement;root.innerHTML=`<div class="dialog-back"><div class="dialog-card" role="dialog" aria-modal="true" aria-labelledby="dialog-heading" aria-describedby="dialog-message"><h2 id="dialog-heading">${esc(title)}</h2><p id="dialog-message">${esc(body)}</p><div class="button-row"><button type="button" id="dialog-cancel" class="button secondary">${esc(tr('cancel'))}</button><button type="button" id="dialog-confirm" class="button">${esc(confirmLabel)}</button></div></div></div>`;let close=()=>{root.innerHTML='';previous?.focus?.()};$('#dialog-cancel').onclick=close;$('#dialog-confirm').onclick=()=>{root.innerHTML='';onConfirm()};root.querySelector('.dialog-back').onclick=e=>{if(e.target.classList.contains('dialog-back'))close()};$('#dialog-cancel').focus();let handler=e=>{if(!root.firstChild){document.removeEventListener('keydown',handler);return}if(e.key==='Escape'){e.preventDefault();close();document.removeEventListener('keydown',handler)}else if(e.key==='Tab'){let els=[...root.querySelectorAll('button')];if(e.shiftKey&&document.activeElement===els[0]){e.preventDefault();els[els.length-1].focus()}else if(!e.shiftKey&&document.activeElement===els[els.length-1]){e.preventDefault();els[0].focus()}}};document.addEventListener('keydown',handler)}
+function confirmSubmit(){const s=S.session,missing=s.questions.filter(q=>!answer(q).length).length;openDialog(tr('confirmTitle'),`${tr('confirmBody')} ${tr('unansweredCount')}: ${missing}.`,tr('submitConfirm'),finishQuiz)}
+function computeStats(){let s=S.session;const byTopic={};let right=0;for(const q of s.questions){if(!byTopic[q.topic])byTopic[q.topic]={correct:0,total:0};byTopic[q.topic].total++;if(correct(q)){byTopic[q.topic].correct++;right++}}return {correct:right,total:s.questions.length,percentage:Math.round(right*100/s.questions.length),byTopic}}
+function finishQuiz(){const s=S.session;if(!s||s.completed)return;stopTimer();s.ended=Date.now();s.completed=true;s.stats=computeStats();saveHistory({date:new Date(s.ended).toISOString(),mode:s.mode,...s.stats,elapsedMs:elapsed()});S.screen='results';render();headFocus()}
+function weakest(){const s=S.session;let entries=Object.entries(s.stats.byTopic).map(([topic,x])=>({topic,percent:100*x.correct/x.total,wrong:x.total-x.correct})).filter(x=>x.wrong>0).sort((a,b)=>a.percent-b.percent||b.wrong-a.wrong).slice(0,3);return entries.map(x=>{const bad=s.questions.filter(q=>q.topic===x.topic&&!correct(q));return {...x,pages:[...new Set(bad.map(q=>q.source.page))].sort((a,b)=>a-b),file:bad[0]?.source.file}})}
+function statsBars(){let s=S.session;return `<div class="bars">${Object.entries(s.stats.byTopic).map(([topic,x])=>{let pct=100*x.correct/x.total;return `<div><div class="bar-label"><strong>${esc(labelTopic(topic))}</strong><span>${x.correct}/${x.total} · ${pc(pct)}</span></div><div class="bar-track" role="progressbar" aria-label="${esc(labelTopic(topic))}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.round(pct)}"><div class="bar-fill" style="width:${pct}%"></div></div></div>`}).join('')}</div>`}
+function renderResults(){const s=S.session,st=s.stats,weak=weakest();const rec=weak.length?`<div class="recommendations"><h3>${esc(tr('strengthen'))}</h3><ol>${weak.map(w=>`<li><strong>${esc(labelTopic(w.topic))} · ${pc(w.percent)}</strong><div class="small">${esc(tr('reread'))}: ${esc(w.file)} · ${esc(tr('page'))} ${w.pages.join(', ')}</div></li>`).join('')}</ol></div>`:`<p class="info">${esc(tr('perfect'))}</p>`;
+app.innerHTML=`<section class="card"><span class="eyebrow">${esc(tr('completed'))} · ${esc(s.mode==='exam'?tr('exam'):tr('practice'))}</span><h1>${esc(tr('results'))}</h1><p>${esc(tr('resultsText'))}</p><div class="metric-grid"><div class="metric"><strong>${st.correct}/${st.total}</strong><span>${esc(tr('score'))}</span></div><div class="metric"><strong>${st.percentage}%</strong><span>${esc(tr('percent'))}</span></div><div class="metric"><strong>${duration(elapsed())}</strong><span>${esc(tr('time'))}</span></div><div class="metric"><strong>${esc(S.id)}</strong><span>${esc(tr('id'))}</span></div></div><h2>${esc(tr('breakdown'))}</h2>${statsBars()}${rec}<div class="divider"></div><div class="button-row"><button id="review" class="button" type="button">${esc(tr('review'))}</button><button id="retry" class="button secondary" type="button" ${st.correct===st.total?'disabled':''}>${esc(tr('missed'))}</button><button id="new-quiz" class="button secondary" type="button">${esc(tr('newQuiz'))}</button><button id="download" class="button ghost" type="button">${esc(tr('download'))}</button></div><p class="small">${esc(tr('downloadDesc'))} · ${esc(fmtDate(s.ended))}</p></section><section class="card"><h2>${esc(tr('history'))}</h2>${renderHistory()}<p class="storage-note">${esc(storageOK?tr('savedLocal'):tr('unsaved'))}</p></section>`;
+$('#review').onclick=()=>{S.screen='review';render();headFocus()};$('#retry').onclick=()=>{let miss=s.questions.filter(q=>!correct(q)).map(q=>q.id);if(miss.length)startQuiz(miss,'practice')};$('#new-quiz').onclick=()=>{S.screen='setup';S.session=null;render();headFocus()};$('#download').onclick=downloadResults}
+function renderReview(){const s=S.session;let rows=s.questions.map((q,i)=>{let ok=correct(q);return `<article class="review-item"><div class="panel-head"><span class="pill">${esc(tr('question'))} ${i+1} · ${esc(labelTopic(q.topic))}</span><span class="pill">${esc(difficulty(q))}</span></div><h3>${esc(txt(q.question))}</h3><p class="answer-line"><strong>${esc(tr('yourChoice'))}: </strong><span class="${ok?'answer-good':'answer-bad'}">${esc(listText(q,answer(q)))}</span></p><p class="answer-line"><strong>${esc(tr('correctChoice'))}: </strong><span class="answer-good">${esc(listText(q,q.correctAnswers))}</span></p><p class="small" style="margin-top:10px">${esc(txt(q.explanation))}</p>${sourceHtml(q)}</article>`}).join('');app.innerHTML=`<section><span class="eyebrow">${esc(tr('completed'))}</span><h1>${esc(tr('reviewTitle'))}</h1><p>${esc(tr('reviewSubtitle'))}</p><div class="button-row" style="margin-bottom:20px"><button id="back-results" class="button secondary">${esc(tr('back'))}</button><button id="download" class="button ghost">${esc(tr('download'))}</button></div><div class="review-list">${rows}</div><div class="button-row" style="margin-top:18px"><button id="back-bottom" class="button secondary">${esc(tr('back'))}</button></div></section>`;$('#back-results').onclick=$('#back-bottom').onclick=()=>{S.screen='results';render();headFocus()};$('#download').onclick=downloadResults}
+function downloadableHTML(){const st=S.session.stats;let rows=Object.entries(st.byTopic).map(([k,v])=>`<tr><td>${esc(labelTopic(k))}</td><td>${v.correct}/${v.total}</td><td>${Math.round(100*v.correct/v.total)}%</td></tr>`).join('');return `<!doctype html><html lang="${S.lang}"><head><meta charset="utf-8"><title>Capstone midterm result ${esc(S.id)}</title><style>body{font:15px/1.6 Arial,sans-serif;color:#111827;max-width:770px;margin:45px auto;padding:15px}h1{font-size:27px}table{border-collapse:collapse;width:100%;margin:18px 0}th,td{border-bottom:1px solid #bbc5d2;padding:10px;text-align:left}th{background:#eff3f9}button{padding:10px 16px}@media print{button{display:none}}</style></head><body><h1>Capstone: System Analysis and Design</h1><h2>${esc(tr('results'))}</h2><p><b>${esc(tr('id'))}:</b> ${esc(S.id)}<br><b>${esc(tr('date'))}:</b> ${esc(fmtDate(S.session.ended))}<br><b>${esc(tr('mode'))}:</b> ${esc(tr(S.session.mode))}<br><b>${esc(tr('score'))}:</b> ${st.correct}/${st.total} (${st.percentage}%)<br><b>${esc(tr('time'))}:</b> ${duration(elapsed())}</p><h2>${esc(tr('breakdown'))}</h2><table><thead><tr><th>${esc(tr('topics'))}</th><th>${esc(tr('score'))}</th><th>${esc(tr('percent'))}</th></tr></thead><tbody>${rows}</tbody></table><p>${esc(tr('savedLocal'))}</p><button onclick="window.print()">Print / Печать</button></body></html>`}
+function downloadResults(){let blob=new Blob([downloadableHTML()],{type:'text/html;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='capstone_result_'+S.id.replace(/[^a-zA-Z0-9]/g,'')+'_'+new Date(S.session.ended).toISOString().slice(0,10)+'.html';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),2500)}
+function changeId(){if(S.screen==='quiz'){openDialog(tr('switchTitle'),tr('switchBody'),tr('switchConfirm'),()=>{stopTimer();S.session=null;S.id='';S.screen='setup';render();headFocus();$('#setup-student-id')?.focus()})}else{stopTimer();S.session=null;S.id='';S.screen='setup';render();headFocus();$('#setup-student-id')?.focus()}}
+$('#language').addEventListener('change',e=>{S.lang=e.target.value;render()});$('#theme').addEventListener('click',()=>{S.theme=S.theme==='light'?'dark':'light';try{localStorage.setItem('sadquiz_theme',S.theme)}catch(_){}render()});
+document.addEventListener('keydown',e=>{if(S.screen!=='quiz'||$('#dialog-root').firstChild||e.ctrlKey||e.altKey||e.metaKey||e.shiftKey)return;const tag=document.activeElement?.tagName;if(tag==='INPUT'&&document.activeElement?.type==='number'||tag==='SELECT'||tag==='TEXTAREA')return;const s=S.session,q=currentQuestion();if(/^[1-4]$/.test(e.key)){const pos=Number(e.key)-1,idx=s.order[q.id][pos];if(idx===undefined||s.checked.has(q.id))return;e.preventDefault();let input=app.querySelector(`[data-option="${idx}"]`);if(!input)return;input.click();return}if(e.key==='Enter'){if(tag==='BUTTON'&&document.activeElement?.id!=='next'&&document.activeElement?.id!=='check-answer')return;e.preventDefault();if(s.mode==='practice'){if(s.checked.has(q.id))$('#next')?.click();else $('#check-answer')?.click()}else $('#next')?.click()}});
+render();
+})();
+</script>
+</body>
+</html>
